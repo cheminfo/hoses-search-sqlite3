@@ -5,7 +5,7 @@ import sqLite from 'better-sqlite3';
 
 let db;
 
-export default function getDB() {
+export function getDB() {
   const path = new URL('../../sqlite/', import.meta.url).pathname;
   console.log({ path })
   if (!db) {

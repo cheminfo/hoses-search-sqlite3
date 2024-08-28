@@ -1,7 +1,7 @@
 import md5 from 'md5';
 import OCL from 'openchemlib/full.js';
 
-import getDB from "./db/getDB.js";
+import { getDB } from "./db/getDB.js";
 
 const db = getDB();
 const stmt = db.prepare('INSERT OR IGNORE INTO molecules VALUES (@id, @idCode, @ssIndex0, @ssIndex1, @ssIndex2, @ssIndex3, @ssIndex4, @ssIndex5, @ssIndex6, @ssIndex7)');

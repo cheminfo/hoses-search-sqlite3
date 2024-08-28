@@ -1,4 +1,4 @@
-import getDB from "./db/getDB.js";
+import { getDB } from "./db/getDB.js";
 
 const db = getDB();
 const stmt = db.prepare(`

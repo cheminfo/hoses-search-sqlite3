@@ -20,18 +20,18 @@
     "@fastify/swagger": "^8.15.0",
     "@fastify/swagger-ui": "^4.1.0",
     "@lukeed/uuid": "^2.0.1",
-    "better-sqlite3": "^11.1.1",
+    "better-sqlite3": "^11.2.1",
     "fastify": "^4.28.1",
     "md5": "^2.3.0",
-    "openchemlib": "^8.14.0",
+    "openchemlib": "^8.15.0",
     "openchemlib-utils": "^6.4.1",
     "sdf-parser": "^6.0.1"
   },
   "devDependencies": {
-    "@types/node": "^20.14.9",
+    "@types/node": "^22.5.1",
     "eslint": "^8.57.0",
-    "eslint-config-cheminfo": "^9.2.0",
-    "prettier": "^3.3.2",
+    "eslint-config-cheminfo": "^11.1.1",
+    "prettier": "^3.3.3",
     "vitest": "^2.0.5"
   }
 }

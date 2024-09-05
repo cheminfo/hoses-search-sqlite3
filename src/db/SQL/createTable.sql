@@ -1,20 +1,33 @@
 CREATE TABLE IF NOT EXISTS molecules (
-  id data_type PRIMARY KEY,
-  idCode data_type TEXT,
-  ssIndex0 data_type INTEGER,
-  ssIndex1 data_type INTEGER,
-  ssIndex2 data_type INTEGER,
-  ssIndex3 data_type INTEGER,
-  ssIndex4 data_type INTEGER,
-  ssIndex5 data_type INTEGER,
-  ssIndex6 data_type INTEGER,
-  ssIndex7 data_type INTEGER
+    molecule_id data_type PRIMARY KEY,
+    molecule data_type TEXT NOT NULL UNIQUE, -- UNIQUE ?
+    coordinates data_type TEXT NOT NULL
 );
-CREATE INDEX IF NOT EXISTS ssIndex0 ON molecules(ssIndex0);
-CREATE INDEX IF NOT EXISTS ssIndex1 ON molecules(ssIndex1);
-CREATE INDEX IF NOT EXISTS ssIndex2 ON molecules(ssIndex2);
-CREATE INDEX IF NOT EXISTS ssIndex3 ON molecules(ssIndex3);
-CREATE INDEX IF NOT EXISTS ssIndex4 ON molecules(ssIndex4);
-CREATE INDEX IF NOT EXISTS ssIndex5 ON molecules(ssIndex5);
-CREATE INDEX IF NOT EXISTS ssIndex6 ON molecules(ssIndex6);
-CREATE INDEX IF NOT EXISTS ssIndex7 ON molecules(ssIndex7);
+
+CREATE TABLE IF NOT EXISTS hoseCodes (
+    hose_id data_type PRIMARY KEY,
+    hose data_type TEXT NOT NULL,
+    nucleus data_type TEXT,
+    creationDate data_type TEXT,
+    lastModificationDate data_type TEXT,
+    sphere data_type INTEGER NOT NULL,
+    hoseValue data_type INTEGER NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS measure ( -- TODO : Revoir le nom de cette table
+    hose_id INTEGER,
+    molecule_id INTEGER,
+    PRIMARY KEY (hose_id, molecule_id), -- Peut-il y avoir un HOSE code commun à plusieurs molécules différentes ? Si, oui corriger cette PRIMARY KEY.
+    FOREIGN KEY (hose_id) REFERENCES hoseCode(hose_id),
+    FOREIGN KEY (molecule_id) REFERENCES molecules(molecule_id)
+);
+
+-- CREATE INDEX IF NOT EXISTS molecule ON molecules(molecule);
+-- CREATE INDEX IF NOT EXISTS coordinates ON molecules(coordinates);
+
+-- CREATE INDEX IF NOT EXISTS hose ON hoseCodes(hose);
+-- CREATE INDEX IF NOT EXISTS nucleus ON hoseCodes(nucleus);
+-- CREATE INDEX IF NOT EXISTS creationDate ON hoseCodes(creationDate);
+-- CREATE INDEX IF NOT EXISTS lastModificationDate ON hoseCodes(lastModificationDate);
+-- CREATE INDEX IF NOT EXISTS sphere ON hoseCodes(sphere);
+-- CREATE INDEX IF NOT EXISTS hoseValue ON hoseCodes(hoseValue);

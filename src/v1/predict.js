@@ -5,7 +5,7 @@ const { FastifyRequest, FastifyReply } = pkg;
 
 const debug = debugLibrary('getInfoFromSmiles');
 
-export default function fromMolfileGet(fastify) {
+export default function fromMolfile(fastify) {
   fastify.route({
     url: '/v1/convertRaw',
     method: ['GET', 'POST'],

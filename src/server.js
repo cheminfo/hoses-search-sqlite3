@@ -7,7 +7,14 @@ import Fastify from 'fastify';
 
 import v1 from './v1/v1.js';
 
+import { getDB } from './db/getDB.js';
+
 const debug = debugLibrary('server');
+
+async function setDB() {
+  const db = getDB();
+  return db;
+}
 
 async function doAll() {
   const fastify = Fastify({
@@ -57,4 +64,5 @@ async function doAll() {
   });
 }
 
+const db = setDB();
 doAll();

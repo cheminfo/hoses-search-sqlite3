@@ -1,5 +1,7 @@
-import { readFile } from 'fs/promises';
+import { readFileSync } from 'fs';
 
-export async function loadSQLReqest(path) {
-  return await readFile(new URL(path, import.meta.url));
+export function loadSQLReqest(path) {
+  const query = readFileSync(new URL(path, import.meta.url), 'utf-8');
+  //   console.log(query);
+  return query;
 }

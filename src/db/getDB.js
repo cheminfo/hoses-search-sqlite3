@@ -7,7 +7,8 @@ import sqLite from 'better-sqlite3';
 let db;
 
 export function getDB() {
-  const path = new URL('../../sqlite/', import.meta.url).pathname; // ":memory:" for creating an in-memory database
+  // const path = new URL('../../sqlite/', import.meta.url).pathname;
+  const path = ':memory:'; // for creating an in-memory database
   console.log({ path });
   if (!db) {
     if (!existsSync(path)) {

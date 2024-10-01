@@ -25,6 +25,7 @@
     "md5": "^2.3.0",
     "openchemlib": "^8.15.0",
     "openchemlib-utils": "^6.4.1",
+    "postgrator": "^7.3.0",
     "sdf-parser": "^6.0.1"
   },
   "devDependencies": {

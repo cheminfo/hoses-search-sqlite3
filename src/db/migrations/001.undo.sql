@@ -1,0 +1,3 @@
+DROP TABLE IF EXISTS entries;
+DROP TABLE IF EXISTS hoseCodes;
+DROP TABLE IF EXISTS measures;

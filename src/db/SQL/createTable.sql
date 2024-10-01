@@ -15,6 +15,7 @@ CREATE TABLE IF NOT EXISTS hoseCodes (
 );
 
 CREATE TABLE IF NOT EXISTS measure ( -- TODO : Revoir le nom de cette table ?
+
     hose_id INTEGER,
     molecule_id INTEGER,
     PRIMARY KEY (hose_id, molecule_id), -- Peut-il y avoir un HOSE code commun à plusieurs molécules différentes ? Si, oui corriger cette PRIMARY KEY.

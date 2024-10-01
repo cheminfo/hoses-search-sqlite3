@@ -7,23 +7,21 @@ import sqLite from 'better-sqlite3';
 let db;
 
 export function getDB() {
-  const path = join(
-    new URL('../../sqlite/', import.meta.url).pathname,
-    'db.sqlite',
-  );
-  console.log({ path });
+  const dbDirPath = new URL('sqlite', import.meta.url).pathname;
+  const dbPath = join(dbDirPath, 'db.sqlite');
+  console.log({ dbPath });
   if (!db) {
-    if (!existsSync(path)) {
-      mkdirSync(path);
+    if (!existsSync(dbDirPath)) {
+      mkdirSync(dbDirPath);
     }
-    db = sqLite(path, { verbose: console.log });
+    db = sqLite(dbPath, { verbose: console.log });
     // https://www.sqlite.org/wal.html
     // Activating WAL mode allows to get a speed improvement of 100x !!!
     db.pragma('journal_mode = WAL');
   }
 
   setInterval(() => {
-    fs.stat(join(path, 'db.sqlite-wal'), (err, stat) => {
+    fs.stat(join(dbDirPath, 'db.sqlite-wal'), (err, stat) => {
       if (err) {
         if (err.code !== 'ENOENT') throw err;
       } else if (stat.size > 100000000) {

@@ -9,7 +9,7 @@ let db;
 export function getDB() {
   const path = join(
     new URL('../../sqlite/', import.meta.url).pathname,
-    'db.squlite',
+    'db.sqlite',
   );
   console.log({ path });
   if (!db) {

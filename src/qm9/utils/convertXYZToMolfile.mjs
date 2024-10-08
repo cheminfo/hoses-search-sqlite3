@@ -3,7 +3,7 @@ import { existsSync, readFileSync, write, writeFileSync } from 'fs';
 import { join } from 'path';
 const baseDir = new URL('../molfileCache', import.meta.url).pathname;
 
-export async function convertXYZToMolfile(xyz) {
+export async function convertXYZToMolfile(xyz, comment = '') {
   const hash = md5(xyz);
   if (existsSync(join(baseDir, hash))) {
     return readFileSync(join(baseDir, hash), 'utf8');
@@ -20,9 +20,11 @@ export async function convertXYZToMolfile(xyz) {
     method: 'POST',
   });
   const molfile = JSON.parse(await response.text()).result;
-  console.log(molfile);
-  writeFileSync(join(baseDir, hash), molfile, 'utf8');
-  return molfile;
+  const lines = molfile.split('\n');
+  lines[2] = comment;
+  const molfileWithComment = lines.join('\n');
+  writeFileSync(join(baseDir, hash), molfileWithComment, 'utf8');
+  return molfileWithComment;
 }
 
 /*

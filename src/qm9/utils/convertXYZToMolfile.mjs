@@ -1,12 +1,20 @@
 import md5 from 'md5';
-import { existsSync, readFileSync, write, writeFileSync } from 'fs';
+import { existsSync } from 'fs';
+import { readFile, mkdir, writeFile } from 'fs/promises';
 import { join } from 'path';
 const baseDir = new URL('../molfileCache', import.meta.url).pathname;
 
 export async function convertXYZToMolfile(xyz, comment = '') {
   const hash = md5(xyz);
-  if (existsSync(join(baseDir, hash))) {
-    return readFileSync(join(baseDir, hash), 'utf8');
+  const subfolder = hash.slice(0, 2);
+  const filename = join(baseDir, subfolder, hash);
+  const folder = join(baseDir, subfolder);
+  if (!existsSync(folder)) {
+    await mkdir(folder, { recursive: true });
+  }
+
+  if (existsSync(filename)) {
+    return readFile(filename, 'utf8');
   }
 
   const formData = new FormData();
@@ -23,7 +31,7 @@ export async function convertXYZToMolfile(xyz, comment = '') {
   const lines = molfile.split('\n');
   lines[2] = comment;
   const molfileWithComment = lines.join('\n');
-  writeFileSync(join(baseDir, hash), molfileWithComment, 'utf8');
+  await writeFile(filename, molfileWithComment, 'utf8');
   return molfileWithComment;
 }
 

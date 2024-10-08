@@ -2,11 +2,11 @@
 
 import { readFileSync, writeFileSync } from 'fs';
 import { xBoxPlot, xHistogram } from 'ml-spectra-processing';
-import { elementRanges } from './utils/elementRanges.mjs';
-import { createSpheres } from './utils/createSpheres.mjs';
-import { getDensities } from './utils/getDensities.mjs';
-import { getEntries } from './utils/getEntries.mjs';
-import { getGlobalStats } from './utils/getGlobalStats.mjs';
+import { elementRanges } from './utils/elementRanges.js';
+import { createSpheres } from './utils/createSpheres.js';
+import { getDensities } from './utils/getDensities.js';
+import { getEntries } from './utils/getEntries.js';
+import { getGlobalStats } from './utils/getGlobalStats.js';
 
 const statsKeys = ["gw",
   "dksCharged",

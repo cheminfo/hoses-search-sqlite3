@@ -1,5 +1,5 @@
-import { convertXYZToMolfile } from './convertXYZToMolfile.mjs';
-import { calculateHoseCodes } from './calculateHoseCodes.mjs';
+import { convertXYZToMolfile } from './convertXYZToMolfile.js';
+import { calculateHoseCodes } from './calculateHoseCodes.js';
 import OCL from 'openchemlib';
 const { Molecule } = OCL;
 

@@ -1,5 +1,5 @@
 import { test } from 'vitest'
-import { getGlobalStats } from '../getGlobalStats.mjs';
+import { getGlobalStats } from '../getGlobalStats.js';
 import { readFileSync } from 'fs';
 
 test('getGlobalStats', () => {

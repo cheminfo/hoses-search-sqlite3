@@ -3,14 +3,14 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { v4 } from '@lukeed/uuid';
-import sqLite, { Database } from 'better-sqlite3';
+import sqLite from 'better-sqlite3';
 import Postgrator from 'postgrator';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-let db: Database;
+let db;
 
-export async function getDB(): Promise<Database> {
+export async function getDB() {
   if (!db?.open) {
     const path = new URL('../../sqlite/', import.meta.url).pathname;
     if (!existsSync(path)) {
@@ -25,7 +25,7 @@ export async function getDB(): Promise<Database> {
   return db;
 }
 
-export function getAllTableInfo(db: Database) {
+export function getAllTableInfo(db) {
   const sql = `
 SELECT name, sql
 FROM sqlite_master
@@ -35,13 +35,13 @@ WHERE type='table';`;
   return rows;
 }
 
-export async function getTempDB(): Promise<Database> {
+export async function getTempDB() {
   const tempDB = sqLite(`file:${v4()}?mode=memory`);
   await prepareDB(tempDB);
   return tempDB;
 }
 
-export async function prepareDB(db: Database) {
+export async function prepareDB(db) {
   const postgrator = new Postgrator({
     migrationPattern: join(__dirname, 'migrations/*'),
     driver: 'sqlite3',

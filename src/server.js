@@ -11,11 +11,12 @@ import { getDB } from './db/getDB.js';
 import { convertXYZToMolfile } from './qm9/utils/convertXYZToMolfile.mjs';
 import { readFileSync, readdir, rename, watch } from 'fs';
 import { join } from 'path';
+import { importXYZ } from './import/importXYZ.js';
 
 const debug = debugLibrary('server');
 
 async function setDB() {
-  const db = getDB();
+  const db = await getDB();
   return db;
 }
 
@@ -71,32 +72,9 @@ async function doAll() {
 const db = setDB();
 doAll();
 
-const pathToDataToProcess = new URL('./sync/data/to_process', import.meta.url)
+const pathDataToProcess = new URL('./sync/data/to_process', import.meta.url)
   .pathname;
 const pathDataProcessed = new URL('./sync/data/processed', import.meta.url)
   .pathname;
 
-watch(pathToDataToProcess, (eventType, fileName) => {
-  console.log('---> Watching : ', eventType, fileName);
-  readdir(pathToDataToProcess, function (err, files) {
-    if (err) {
-      console.log('---> err : ' + err);
-    } else {
-      if (!files.length) console.log('---> No data to process');
-      else {
-        console.log('---> Data to process : ', files);
-        for (let xyzFile of files) {
-          console.log(xyzFile);
-          console.log(convertXYZToMolfile(xyzFile));
-          rename(
-            join(pathToDataToProcess, xyzFile),
-            join(pathDataProcessed, xyzFile),
-            (err) => {
-              if (err) throw err;
-            },
-          );
-        }
-      }
-    }
-  });
-});
+console.log(importXYZ(join(pathDataToProcess, 'test.xyz')));

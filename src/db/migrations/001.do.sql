@@ -22,3 +22,5 @@ CREATE TABLE IF NOT EXISTS measures ( -- TODO : Revoir le nom de cette table ?
     FOREIGN KEY (hose_id) REFERENCES hoseCode(hose_id),
     FOREIGN KEY (molecule_id) REFERENCES Entries(molecule_id)
 );
+
+

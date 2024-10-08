@@ -34,6 +34,7 @@
     "@types/node": "^22.5.1",
     "eslint": "^8.57.0",
     "eslint-config-cheminfo": "^11.1.1",
+    "postgrator-cli": "^8.1.0",
     "prettier": "^3.3.3",
     "vitest": "^2.0.5"
   }

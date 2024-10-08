@@ -33,11 +33,13 @@ export async function getEntries(xyz, options = {}) {
     entry.molfile3D = await convertXYZToMolfile(entry.xyz);
     const { molecule, map } = Molecule.fromMolfileWithAtomMap(entry.molfile3D);
     entry.map = Array.from(map);
+
     molecule.inventCoordinates();
     entry.mf = molecule.getMolecularFormula().formula;
     entry.mw = molecule.getMolecularFormula().relativeWeight;
     entry.molfile2D = molecule.toMolfile();
     // entry.hoses = calculateHoseCodes(molecule, entry, options);
+    console.log('>>> XYZ : ', entry.xyz);
   }
 
   return entries;

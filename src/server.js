@@ -8,7 +8,7 @@ import Fastify from 'fastify';
 import v1 from './v1/v1.js';
 
 import { getDB } from './db/getDB.js';
-import { convertXYZToMolfile } from './qm9/utils/convertXYZToMolfile.mjs';
+import { convertXYZToMolfile } from './qm9/utils/convertXYZToMolfile.js';
 import { readFileSync, readdir, rename, watch } from 'fs';
 import { join } from 'path';
 import { importXYZ } from './import/importXYZ.js';

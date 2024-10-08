@@ -4,8 +4,9 @@ import { readFile, mkdir, writeFile } from 'fs/promises';
 import { join } from 'path';
 const baseDir = new URL('../molfileCache', import.meta.url).pathname;
 
-export async function convertXYZToMolfile(xyz, comment = '') {
+export async function convertXYZToMolfile(xyz) {
   const hash = md5(xyz);
+  const xyzLines = xyz.split('\n');
   const subfolder = hash.slice(0, 2);
   const filename = join(baseDir, subfolder, hash);
   const folder = join(baseDir, subfolder);
@@ -29,7 +30,7 @@ export async function convertXYZToMolfile(xyz, comment = '') {
   });
   const molfile = JSON.parse(await response.text()).result;
   const lines = molfile.split('\n');
-  lines[2] = comment;
+  lines[2] = xyzLines[1];
   const molfileWithComment = lines.join('\n');
   await writeFile(filename, molfileWithComment, 'utf8');
   return molfileWithComment;

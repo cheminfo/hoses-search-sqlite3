@@ -1,9 +1,9 @@
 import { test, expect } from 'vitest';
 
-import { getDB, getAllTableInfo } from '../getDB.js';
+import { getTempDB, getAllTableInfo } from '../getDB.js';
 
 test('getDB', async () => {
-  const db = await getDB();
+  const db = await getTempDB();
   expect(db.open).toBeTruthy();
 
   const info = getAllTableInfo(db).map((row) => row.name);

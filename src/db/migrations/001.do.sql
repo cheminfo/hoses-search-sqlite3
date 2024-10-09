@@ -17,21 +17,23 @@ CREATE TABLE IF NOT EXISTS atoms (
     atomLabel data_type TEXT NOT NULL
 );
 
-CREATE TABLE IF NOT EXIST algorithms (
+CREATE TABLE IF NOT EXISTS algorithms (
     algorithmID data_type PRIMARY KEY,
     algoName data_type TEXT UNIQUE,
-    algoDescription data_type TEXT,
-)
+    algoDescription data_type TEXT
+);
 
 CREATE TABLE IF NOT EXISTS energies (
     energyID data_type PRIMARY KEY,
     orbital data_type TEXT NOT NULL,
     bindingEnergy data_type REAL,
     kineticEnergy  data_type REAL,
-    sourceEnergy  data_type REAL
+    sourceEnergy  data_type REAL,
+    algorithmID data_type INTEGER NOT NULL,
+    atomID data_type INTEGER NOT NULL,
     FOREIGN KEY (algorithmID) REFERENCES algorithms(algorithmID),
-    FOREIGN KEY (atomID) REFERENCES atoms(atomID),
-)
+    FOREIGN KEY (atomID) REFERENCES atoms(atomID)
+);
 
 CREATE TABLE IF NOT EXISTS hoseCodes (
     hoseID data_type PRIMARY KEY,
@@ -40,6 +42,8 @@ CREATE TABLE IF NOT EXISTS hoseCodes (
     creationDate data_type TEXT,
     sphere data_type INTEGER NOT NULL,
     hoseValue data_type INTEGER NOT NULL,
+    entryID data_type INTEGER NOT NULL,
+    atomID data_type INTEGER NOT NULL,
     FOREIGN KEY (atomID) REFERENCES entries(atomID),
     FOREIGN KEY (entryID) REFERENCES entries(entryID)
 );

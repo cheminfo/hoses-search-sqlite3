@@ -5,7 +5,7 @@ export function importXYZ(xyzFileName) {
   const xyzData = readFileSync(xyzFileName, 'utf-8');
   // console.log(xyzData);
   const entries = getEntries(xyzData);
-  console.log(entries);
+  // console.log(entries);
   // split XYZ
   return entries;
 }

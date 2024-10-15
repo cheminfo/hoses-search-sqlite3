@@ -25,9 +25,6 @@ export async function getDB() {
   return db;
 }
 
-
-
-
 export function getAllTableInfo(db) {
   const sql = `
 SELECT name, sql
@@ -39,7 +36,7 @@ WHERE type='table';`;
 }
 
 export async function getTempDB() {
-  const tempDB = sqLite(":memory:");
+  const tempDB = sqLite(':memory:');
   await prepareDB(tempDB);
   return tempDB;
 }

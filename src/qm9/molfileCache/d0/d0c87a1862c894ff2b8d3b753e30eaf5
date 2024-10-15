@@ -1,0 +1,10 @@
+Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+ OpenBabel10152414063D
+Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+  3  2  0  0  0  0  0  0  0  0999 V2000
+    4.5000    5.4641    4.5069 O   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5954    4.5000    4.5009 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4110    5.7938    4.5000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  2  1  1  0  0  0  0
+  3  1  1  0  0  0  0
+M  END

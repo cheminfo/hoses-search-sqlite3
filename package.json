@@ -23,9 +23,12 @@
     "better-sqlite3": "^11.2.1",
     "delay": "^6.0.0",
     "fastify": "^4.28.1",
+    "install": "^0.13.0",
+    "mass-tools": "^2.2.6",
     "md5": "^2.3.0",
     "openchemlib": "^8.15.0",
     "openchemlib-utils": "^6.4.1",
+    "piscina": "^4.7.0",
     "postgrator": "^7.3.0",
     "sdf-parser": "^6.0.1",
     "typescript": "^5.6.2"

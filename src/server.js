@@ -12,6 +12,7 @@ import { convertXYZToMolfile } from './qm9/utils/convertXYZToMolfile.js';
 import { readFileSync, readdir, rename, watch } from 'fs';
 import { join } from 'path';
 import { importXYZ } from './import/importXYZ.js';
+import insertEntry from './import/insertEntry.js';
 
 const debug = debugLibrary('server');
 
@@ -64,6 +65,7 @@ async function doAll() {
   fastify.listen({ port: 40828, host: '0.0.0.0' }, (err) => {
     if (err) {
       fastify.log.error(err);
+      console.log(err);
       process.exit(1);
     }
   });
@@ -77,4 +79,10 @@ const pathDataToProcess = new URL('./sync/data/to_process', import.meta.url)
 const pathDataProcessed = new URL('./sync/data/processed', import.meta.url)
   .pathname;
 
-console.log(importXYZ(join(pathDataToProcess, 'test.xyz')));
+const xyzEntries = await importXYZ(join(pathDataToProcess, 'test.xyz'));
+// console.log(xyzEntries);
+
+for (let entry of xyzEntries) {
+  console.log(entry);
+  insertEntry(entry, db);
+}

@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS entries (
     entryID data_type PRIMARY KEY,
-    idCode data_type TEXT NOT NULL,
+    idCode data_type TEXT NOT NULL, -- Structure chimique canonique
     nbAtoms data_type INTEGER NOT NULL,
     coordinates data_type TEXT NOT NULL,
     relativeWeight data_type INTEGER NOT NULL,

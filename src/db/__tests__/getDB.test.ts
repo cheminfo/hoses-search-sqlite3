@@ -7,6 +7,15 @@ test('getDB', async () => {
   expect(db.open).toBeTruthy();
 
   const info = getAllTableInfo(db).map((row) => row.name);
-  expect(info).toEqual(['schemaversion', 'entries', 'hoseCodes', 'measures']);
+  console.log(info);
+  // expect(info).toEqual(['schemaversion', 'entries', 'hoseCodes', 'measures']);
+  expect(info).toEqual([
+    'schemaversion',
+    'entries',
+    'atoms',
+    'algorithms',
+    'energies',
+    'hoseCodes',
+  ]);
   db.close();
 });

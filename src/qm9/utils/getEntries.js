@@ -1,12 +1,10 @@
 import { convertXYZToMolfile } from './convertXYZToMolfile.js';
 import { calculateHoseCodes } from './calculateHoseCodes.js';
-import { getInfoFromIDCode } from '../../db/getInfoFromIDCode.js';
 import { getInfoFromMolfile } from '../../db/getInfoFromMolfile.js';
 import OCL from 'openchemlib';
 const { Molecule } = OCL;
 
-export async function getEntries(xyz, options = {}) {
-  const { densities } = options;
+export async function getEntries(xyz) {
   let entry;
   let entries = [];
   let lines = xyz.split('\n');
@@ -39,14 +37,11 @@ export async function getEntries(xyz, options = {}) {
     molecule.inventCoordinates();
     entry.mf = molecule.getMolecularFormula().formula;
     entry.mw = molecule.getMolecularFormula().relativeWeight;
-    console.log(entry.mf);
     entry.molfile2D = molecule.toMolfile();
     const moleculeInfo = await getInfoFromMolfile(entry.molfile3D);
-    console.log(moleculeInfo);
     entry.idCode = moleculeInfo.idCode;
     entry.ssIndex = moleculeInfo.ssIndex;
     // entry.hoses = calculateHoseCodes(molecule, entry, options);
-    // console.log(entry.atoms);
     // Object.keys(entry).forEach((prop) => console.log(prop));
   }
   return entries;

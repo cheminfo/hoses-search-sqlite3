@@ -8,8 +8,6 @@ import Fastify from 'fastify';
 import v1 from './v1/v1.js';
 
 import { getDB } from './db/getDB.js';
-import { convertXYZToMolfile } from './qm9/utils/convertXYZToMolfile.js';
-import { readFileSync, readdir, rename, watch } from 'fs';
 import { join } from 'path';
 import { importXYZ } from './import/importXYZ.js';
 import insertEntry from './import/insertEntry.js';
@@ -80,9 +78,3 @@ const pathDataProcessed = new URL('./sync/data/processed', import.meta.url)
   .pathname;
 
 const xyzEntries = await importXYZ(join(pathDataToProcess, 'test.xyz'));
-// console.log(xyzEntries);
-
-for (let entry of xyzEntries) {
-  console.log(entry);
-  insertEntry(entry, db);
-}

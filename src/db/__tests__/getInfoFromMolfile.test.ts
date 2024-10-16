@@ -1,6 +1,5 @@
 import { test, expect } from 'vitest';
 
-import { getInfoFromIDCode } from '../getInfoFromIDCode.js';
 import { getInfoFromMolfile } from '../getInfoFromMolfile.js';
 import { readFileSync } from 'fs';
 import { convertXYZToMolfile } from '../../qm9/utils/convertXYZToMolfile.js';
@@ -11,9 +10,7 @@ test('getInfoFromMolfile', async () => {
     'utf-8',
   );
   const molfileData = await convertXYZToMolfile(xyzData);
-  // console.log(xyzData);
   const result = await getInfoFromMolfile(molfileData);
-  // console.log(result);
   expect(result).toStrictEqual({
     mf: 'C8H16O',
     mw: 128.2123441630927,

@@ -8,10 +8,10 @@ test('getDB', async () => {
 
   const info = getAllTableInfo(db).map((row) => row.name);
   console.log(info);
-  // expect(info).toEqual(['schemaversion', 'entries', 'hoseCodes', 'measures']);
   expect(info).toEqual([
     'schemaversion',
     'entries',
+    'sqlite_sequence',
     'atoms',
     'algorithms',
     'energies',

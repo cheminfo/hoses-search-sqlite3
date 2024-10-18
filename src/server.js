@@ -7,7 +7,7 @@ import Fastify from 'fastify';
 
 import v1 from './v1/v1.js';
 
-import { getDB } from './db/getDB.js';
+import { getDB, getTempDB } from './db/getDB.js';
 import { join } from 'path';
 import { importXYZ } from './import/importXYZ.js';
 import insertEntry from './import/insertEntry.js';
@@ -15,7 +15,7 @@ import insertEntry from './import/insertEntry.js';
 const debug = debugLibrary('server');
 
 async function setDB() {
-  const db = await getDB();
+  const db = await getTempDB();
   return db;
 }
 
@@ -71,10 +71,3 @@ async function doAll() {
 
 const db = setDB();
 doAll();
-
-const pathDataToProcess = new URL('./sync/data/to_process', import.meta.url)
-  .pathname;
-const pathDataProcessed = new URL('./sync/data/processed', import.meta.url)
-  .pathname;
-
-const xyzEntries = await importXYZ(join(pathDataToProcess, 'test.xyz'));

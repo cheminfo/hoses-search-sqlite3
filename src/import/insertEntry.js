@@ -1,9 +1,8 @@
-
 export function insertEntry(entry, db) {
   const insertStmt = db.prepare(`INSERT INTO 
         entries(mf, nbAtoms, idCode, coordinates, mw, comment, ssIndex, molfile2D, molfile3D, xyz, lastModificationDate) 
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`);
-  const now = Date.now()
+  const now = Date.now();
   insertStmt.run(
     entry.mf,
     entry.nbAtoms,

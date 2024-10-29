@@ -18,26 +18,26 @@ export function calculateHoseCodes(molecule, entry, options = {}) {
       for (let j = 0; j < hoses[i].length; j++) {
         const hose = hoses[i][j];
         if (!stats[key][hose]) {
-          stats[key][hose] = { sources: [], sphere: j, idCode: hose, };
+          stats[key][hose] = { sources: [], sphere: j, idCode: hose };
         }
 
         stats[key][hose].sources.push({
-          value: value, idCode, atomLabel: molecule.getAtomLabel(i),
+          value: value,
+          idCode,
+          atomLabel: molecule.getAtomLabel(i),
         });
       }
     }
-
 
     const atom = {
       atomLabel: molecule.getAtomLabel(i),
       hose: hoses[i].map((hose, index) => ({ oclID: hose, sphere: index })),
       atomIndex: i,
-    }
+    };
     for (const key of statsKeys) {
-      atom[key] = Number(entry.atoms[map[i]][key])
+      atom[key] = Number(entry.atoms[map[i]][key]);
     }
-    atoms.push(atom)
-
+    atoms.push(atom);
   }
   return atoms;
 }

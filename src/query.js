@@ -1,4 +1,4 @@
-import { getDB } from "./db/getDB.js";
+import { getDB } from './db/getDB.js';
 
 const db = getDB();
 const stmt = db.prepare(`
@@ -23,8 +23,8 @@ const data1 = {
   ssIndex4: 536870912,
   ssIndex5: 30000,
   ssIndex6: 262144,
-  ssIndex7: 80000
-}
+  ssIndex7: 80000,
+};
 
 const data2 = {
   ssIndex0: 918734323983581184n,
@@ -34,8 +34,8 @@ const data2 = {
   ssIndex4: 31525197391593472n,
   ssIndex5: -36028797018963968n,
   ssIndex6: 1008806316530991104n,
-  ssIndex7: -549439154539200512n
-}
+  ssIndex7: -549439154539200512n,
+};
 
 const data3 = {
   ssIndex0: 20,
@@ -45,19 +45,15 @@ const data3 = {
   ssIndex4: 784n,
   ssIndex5: 0,
   ssIndex6: 0,
-  ssIndex7: 0
-}
+  ssIndex7: 0,
+};
 
-console.time('query')
+console.time('query');
 const result = stmt.all(data2);
-console.log(result)
-console.timeEnd('query')
+console.log(result);
+console.timeEnd('query');
 
-
-
-console.time('query2')
+console.time('query2');
 const result2 = stmt.all(data2);
-console.log(result2)
-console.timeEnd('query2')
-
-
+console.log(result2);
+console.timeEnd('query2');

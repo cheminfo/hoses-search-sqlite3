@@ -6,6 +6,7 @@ import { getTempDB, getAllTableInfo } from '../../db/getDB.js';
 test('insertEntry', async () => {
   const db = await getTempDB();
   expect(db.open).toBeTruthy();
+
   const entries = await importXYZ(
     new URL('./data/testInsertEntry.xyz', import.meta.url).pathname,
   );

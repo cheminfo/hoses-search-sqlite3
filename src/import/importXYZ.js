@@ -1,9 +1,13 @@
-import { getEntries } from '../qm9/utils/getEntries.js';
-import { readFileSync } from 'fs';
+import { enhanceXYZEntries as parseXYZLines } from './enhanceXYZEntries.js';
+import { insertEntry } from './insertEntry.js';
+import { splitXYZ } from './splitXYZ.js';
 
-export function importXYZ(xyzFileName) {
-  const xyzData = readFileSync(xyzFileName, 'utf-8');
-  const entries = getEntries(xyzData);
-  // split XYZ
-  return entries;
+export async function importXYZ(content, db) {
+
+  const xyzEntries = splitXYZ(content);
+
+  for (const xyzLines of xyzEntries) {
+    const entry = await parseXYZLines(xyzLines);
+    insertEntry(entry, db);
+  }
 }

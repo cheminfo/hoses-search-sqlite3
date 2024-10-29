@@ -1,14 +1,16 @@
 CREATE TABLE IF NOT EXISTS entries(
     entryID INTEGER PRIMARY KEY AUTOINCREMENT,
-    idCode data_type TEXT NOT NULL, -- Structure chimique canonique
     nbAtoms data_type INTEGER NOT NULL,
+    idCode data_type TEXT NOT NULL, -- Structure chimique canonique
     coordinates data_type TEXT NOT NULL,
-    relativeWeight data_type REAL NOT NULL,
+    mf data_type TEXT NOT NULL,
+    mw data_type REAL NOT NULL,
     comment data_type TEXT NOT NULL,
     ssIndex data_type BLOB NOT NULL,
-    molFile data_type TEXT,
-    xyzFile data_type TEXT,
-    lastModificationDate data_type TEXT
+    molfile2D data_type TEXT,
+    molfile3D data_type TEXT,
+    xyz data_type TEXT,
+    lastModificationDate data_type INTEGER
 );
 
 CREATE TABLE IF NOT EXISTS atoms (

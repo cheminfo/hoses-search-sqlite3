@@ -2,7 +2,6 @@ import { existsSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { v4 } from '@lukeed/uuid';
 import sqLite from 'better-sqlite3';
 import Postgrator from 'postgrator';
 
@@ -52,7 +51,6 @@ export async function prepareDB(db) {
           const rows = stmt.all();
           resolve({ rows });
         } catch (error) {
-          //@ts-expect-error This is a hack to avoid the error
           if (error.message.includes('This statement does not return data')) {
             stmt.run();
             resolve({ rows: [] });

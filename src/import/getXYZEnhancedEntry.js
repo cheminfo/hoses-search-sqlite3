@@ -31,6 +31,7 @@ export async function getXYZEnhancedEntry(lines, options = {}) {
   for (let i = 0; i < map.length; i++) {
     const sourceAtom = map[i];
     entry.atoms.push({ ...atoms[sourceAtom], hoses: hoses[i] });
+    console.log(entry.atoms);
   }
 
   entry.mf = molecule.getMolecularFormula().formula;

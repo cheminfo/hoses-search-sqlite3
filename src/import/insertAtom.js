@@ -1,6 +1,6 @@
-export function insertAtom(atom, entryID, db) {
+export function insertAtom(atom, molfileIndex, entryID, db) {
   const insertStmt = db.prepare(`INSERT INTO 
-          atoms(number, label, entryID) 
+          atoms(molfileIndex, label, entryID) 
           VALUES (?, ?, ?)`);
-  insertStmt.run();
+  insertStmt.run(molfileIndex, atom.atom, entryID);
 }

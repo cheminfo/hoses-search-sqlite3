@@ -40,5 +40,7 @@ test('importXYZ', async () => {
 
   const stmt = db.prepare('SELECT * FROM entries');
   const insertedEntries = stmt.all();
+  const stmtAtoms = db.prepare('SELECT * FROM atoms');
+  const insertedAtoms = stmtAtoms.all();
   // checkDB
 });

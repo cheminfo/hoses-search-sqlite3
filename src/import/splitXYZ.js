@@ -15,5 +15,5 @@ export function splitXYZ(content) {
     }
     entry.push(line);
   }
-  return entries;
+  return entries.filter((entry) => entry.length > 0);
 }

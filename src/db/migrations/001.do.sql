@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS entries(
     entryID INTEGER PRIMARY KEY AUTOINCREMENT,
     nbAtoms data_type INTEGER NOT NULL,
-    idCode data_type TEXT NOT NULL, -- Unique struture identifier
+    idCode data_type TEXT NOT NULL,
     coordinates data_type TEXT NOT NULL,
     mf data_type TEXT NOT NULL,
     mw data_type REAL NOT NULL,
@@ -15,14 +15,15 @@ CREATE TABLE IF NOT EXISTS entries(
 
 CREATE TABLE IF NOT EXISTS atoms (
     atomID data_type PRIMARY KEY,
-    atomNumber data_type INTEGER NOT NULL,
-    atomLabel data_type TEXT NOT NULL
+    number data_type INTEGER NOT NULL,
+    label data_type TEXT NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS algorithms (
     algorithmID data_type PRIMARY KEY,
-    algoName data_type TEXT UNIQUE,
-    algoDescription data_type TEXT
+    name data_type TEXT UNIQUE,
+    version data_type TEXT,
+    description data_type TEXT
 );
 
 CREATE TABLE IF NOT EXISTS energies (
@@ -41,12 +42,12 @@ CREATE TABLE IF NOT EXISTS hoseCodes (
     hoseID data_type PRIMARY KEY,
     hose data_type TEXT NOT NULL,
     nucleus data_type TEXT,
-    creationDate data_type TEXT,
+    creationDate data_type INTEGER,
     sphere data_type INTEGER NOT NULL,
     hoseValue data_type INTEGER NOT NULL,
     entryID data_type INTEGER NOT NULL,
     atomID data_type INTEGER NOT NULL,
-    FOREIGN KEY (atomID) REFERENCES entries(atomID),
+    FOREIGN KEY (atomID) REFERENCES atoms(atomID),
     FOREIGN KEY (entryID) REFERENCES entries(entryID)
 );
 

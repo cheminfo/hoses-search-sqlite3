@@ -3,7 +3,7 @@ import { calculateHoseCodes } from '../qm9/utils/calculateHoseCodes.js';
 import OCL from 'openchemlib';
 const { Molecule } = OCL;
 
-export async function enhanceXYZEntries(lines) {
+export async function getXYZEnhancedEntry(lines, options = {}) {
   const entry = {}
   entry.nbAtoms = parseInt(lines[0]);
   entry.comment = lines[1];
@@ -11,20 +11,20 @@ export async function enhanceXYZEntries(lines) {
   const cleanLines = lines.slice(0);
   for (let i = 2; i < entry.nbAtoms + 2; i++) {
     const line = lines[i];
-    const [atom, x, y, z, gw, dksCharged, dksNeutral] = line.split(/\s+/);
-    entry.atoms.push({ atom, x, y, z, gw, dksCharged, dksNeutral });
+    const [atom, x, y, z, col4, col5, col6, col7] = line.split(/\s+/);
+    entry.atoms.push({ atom, x, y, z, col4, col5, col6, col7 });
     cleanLines[i] = `${atom} ${x} ${y} ${z}`;
   }
   entry.xyz = cleanLines.join('\n');
   entry.molfile3D = await convertXYZToMolfile(entry.xyz);
   const { molecule, map } = Molecule.fromMolfileWithAtomMap(entry.molfile3D);
   entry.map = Array.from(map);
+  console.log(entry.map)
 
   entry.mf = molecule.getMolecularFormula().formula;
   entry.mw = molecule.getMolecularFormula().relativeWeight;
   molecule.inventCoordinates()
   entry.molfile2D = molecule.toMolfile();
-  console.log(entry.molfile2D)
   const { idCode, coordinates } = molecule.getIDCodeAndCoordinates();
   entry.idCode = idCode
   entry.coordinates = coordinates

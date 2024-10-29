@@ -1,4 +1,5 @@
 import { ensureString } from 'ensure-string';
+
 export function splitXYZ(content) {
   content = ensureString(content);
   let entries = [];

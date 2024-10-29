@@ -1,7 +1,9 @@
-import { readFileSync, writeFileSync } from 'fs';
+import { readFileSync, writeFileSync } from 'node:fs';
+
 import { xBoxPlot, xHistogram } from 'ml-spectra-processing';
-import { elementRanges } from './utils/elementRanges.js';
+
 import { createSpheres } from './utils/createSpheres.js';
+import { elementRanges } from './utils/elementRanges.js';
 import { getDensities } from './utils/getDensities.js';
 import { getEntries } from './utils/getEntries.js';
 import { getGlobalStats } from './utils/getGlobalStats.js';
@@ -51,11 +53,11 @@ writeFileSync(
 // we kee only gw in the js file
 writeFileSync(
   new URL('../../src/data/qm9.js', import.meta.url),
-  'export const qm9=' +
+  `export const qm9=${ 
     stringify({
       //  entries: entriesQM9, stats: statsAsArrays, spheres, globalStats, statsKeys: statsKeys.map(key => ({ key }))
       spheres: { gw: spheres.gw },
-    }),
+    })}`,
 );
 
 function stringify(object) {

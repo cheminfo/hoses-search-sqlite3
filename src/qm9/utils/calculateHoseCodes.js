@@ -22,7 +22,7 @@ export function calculateHoseCodes(molecule, entry, options = {}) {
         }
 
         stats[key][hose].sources.push({
-          value: value,
+          value,
           idCode,
           atomLabel: molecule.getAtomLabel(i),
         });

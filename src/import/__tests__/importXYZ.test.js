@@ -1,11 +1,13 @@
+import { readFileSync } from 'node:fs';
+import { get } from 'node:http';
+
 import { test, expect } from 'vitest';
-import { importXYZ } from '../importXYZ.js';
-import { readFileSync } from 'fs';
-import { get } from 'http';
+
 import { getTempDB } from '../../db/getDB.js';
+import { importXYZ } from '../importXYZ.js';
 
 test('importXYZ', async () => {
-  const content = readFileSync(new URL('./data/test.xyz', import.meta.url));
+  const content = readFileSync(new URL('data/test.xyz', import.meta.url));
   const db = await getTempDB();
   const options = {
     xyz: {

@@ -15,30 +15,30 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@fastify/cors": "^9.0.1",
-    "@fastify/sensible": "^5.6.0",
-    "@fastify/swagger": "^8.15.0",
-    "@fastify/swagger-ui": "^4.1.0",
+    "@fastify/cors": "^10.0.1",
+    "@fastify/sensible": "^6.0.1",
+    "@fastify/swagger": "^9.2.0",
+    "@fastify/swagger-ui": "^5.1.0",
     "@lukeed/uuid": "^2.0.1",
-    "better-sqlite3": "^11.2.1",
+    "better-sqlite3": "^11.5.0",
     "delay": "^6.0.0",
     "ensure-string": "^1.2.0",
-    "fastify": "^4.28.1",
+    "fastify": "^5.0.0",
     "install": "^0.13.0",
     "mass-tools": "^2.2.6",
     "md5": "^2.3.0",
-    "openchemlib": "^8.15.0",
+    "openchemlib": "^8.16.0",
     "openchemlib-utils": "^6.4.1",
     "postgrator": "^7.3.0",
     "sdf-parser": "^6.0.1",
-    "typescript": "^5.6.2"
+    "typescript": "^5.6.3"
   },
   "devDependencies": {
-    "@types/node": "^22.5.1",
-    "eslint": "^8.57.0",
-    "eslint-config-cheminfo": "^11.1.1",
+    "@types/node": "^22.8.2",
+    "eslint": "^9.13.0",
+    "eslint-config-cheminfo": "^12.0.1",
     "postgrator-cli": "^8.1.0",
     "prettier": "^3.3.3",
-    "vitest": "^2.0.5"
+    "vitest": "^2.1.4"
   }
 }

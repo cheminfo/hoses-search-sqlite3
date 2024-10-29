@@ -1,14 +1,15 @@
 import { test, expect } from 'vitest';
+
+import { getTempDB, getAllTableInfo } from '../../db/getDB.js';
 import { importXYZ } from '../importXYZ.js';
 import { insertEntry, insertEntries } from '../insertEntry.js';
-import { getTempDB, getAllTableInfo } from '../../db/getDB.js';
 
 test('insertEntry', async () => {
   const db = await getTempDB();
   expect(db.open).toBeTruthy();
 
   const entries = await importXYZ(
-    new URL('./data/testInsertEntry.xyz', import.meta.url).pathname,
+    new URL('data/testInsertEntry.xyz', import.meta.url).pathname,
   );
   for (let entry of entries) {
     insertEntry(entry, db);
@@ -57,7 +58,7 @@ test('insertEntries', async () => {
   const db = await getTempDB();
   expect(db.open).toBeTruthy();
   const entries = await importXYZ(
-    new URL('./data/testInsertEntries.xyz', import.meta.url).pathname,
+    new URL('data/testInsertEntries.xyz', import.meta.url).pathname,
   );
   insertEntries(entries, db);
   const stmt = db.prepare('SELECT * FROM entries');
@@ -128,6 +129,6 @@ test('insertEntries', async () => {
         "'",
     },
   ];
-  insertedEntries.forEach((entry) => delete entry.lastModificationDate);
+  for (const entry of insertedEntries) delete entry.lastModificationDate;
   expect(insertedEntries).toMatchObject(expectedEntries);
 });

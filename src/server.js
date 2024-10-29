@@ -1,3 +1,5 @@
+import { join } from 'node:path';
+
 import fastifyCors from '@fastify/cors';
 import fastifySensible from '@fastify/sensible';
 import fastifySwagger from '@fastify/swagger';
@@ -5,12 +7,11 @@ import fastifySwaggerUi from '@fastify/swagger-ui';
 import debugLibrary from 'debug';
 import Fastify from 'fastify';
 
-import v1 from './v1/v1.js';
 
 import { getDB, getTempDB } from './db/getDB.js';
-import { join } from 'path';
 import { importXYZ } from './import/importXYZ.js';
 import insertEntry from './import/insertEntry.js';
+import v1 from './v1/v1.js';
 
 const debug = debugLibrary('server');
 

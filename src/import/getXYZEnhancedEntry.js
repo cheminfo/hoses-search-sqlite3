@@ -1,11 +1,13 @@
-import { convertXYZToMolfile } from '../qm9/utils/convertXYZToMolfile.js';
 import OCL from 'openchemlib';
 import { TopicMolecule } from 'openchemlib-utils';
+
+import { convertXYZToMolfile } from '../qm9/utils/convertXYZToMolfile.js';
+
 const { Molecule } = OCL;
 
 export async function getXYZEnhancedEntry(lines, options = {}) {
   const entry = {};
-  entry.nbAtoms = parseInt(lines[0]);
+  entry.nbAtoms = Number.parseInt(lines[0]);
   entry.comment = lines[1];
   entry.atoms = [];
   const cleanLines = lines.slice(0);

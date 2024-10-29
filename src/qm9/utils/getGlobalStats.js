@@ -1,4 +1,5 @@
-import { create } from 'domain';
+import { create } from 'node:domain';
+
 import { xHistogram, createStepArray } from 'ml-spectra-processing';
 
 export function getGlobalStats(stats) {
@@ -8,14 +9,14 @@ export function getGlobalStats(stats) {
     globalStats[key] = { key, spheres: spheresStats };
     for (const stat of Object.values(stats[key])) {
       const atomLabel = stat.sources[0].atomLabel;
-      let currentSphereStats = spheresStats.filter(
+      let currentSphereStats = spheresStats.find(
         (stats) =>
           stats.sphere === stat.sphere && stats.atomLabel === atomLabel,
-      )[0];
+      );
       if (!currentSphereStats) {
         currentSphereStats = {
           sphere: stat.sphere,
-          atomLabel: atomLabel,
+          atomLabel,
           min: stat.boxplot.min,
           max: stat.boxplot.max,
           diffs: [],

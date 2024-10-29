@@ -32,8 +32,8 @@ async function getInfo(request, response) {
   try {
     const result = {};
     return await response.send({ result });
-  } catch (e) {
-    debug(`Error: ${e.stack}`);
-    return response.send({ result: {}, log: e.toString() });
+  } catch (error) {
+    debug(`Error: ${error.stack}`);
+    return response.send({ result: {}, log: error.toString() });
   }
 }

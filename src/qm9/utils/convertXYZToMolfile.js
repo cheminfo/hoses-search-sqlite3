@@ -1,7 +1,9 @@
+import { existsSync } from 'node:fs';
+import { readFile, mkdir, writeFile } from 'node:fs/promises';
+import { join } from 'node:path';
+
 import md5 from 'md5';
-import { existsSync } from 'fs';
-import { readFile, mkdir, writeFile } from 'fs/promises';
-import { join } from 'path';
+
 const baseDir = new URL('../molfileCache', import.meta.url).pathname;
 
 export async function convertXYZToMolfile(xyz) {

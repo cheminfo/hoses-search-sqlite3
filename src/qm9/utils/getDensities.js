@@ -13,7 +13,7 @@ export async function getDensities(xyz, options = {}) {
   let index = 0;
   for (const entry of entries) {
     entry.index = index++;
-    entry.nbAtoms = parseInt(entry.lines[0]);
+    entry.nbAtoms = Number.parseInt(entry.lines[0]);
     if (!entry.nbAtoms === entry.lines.length - 2) {
       throw new Error('nAtoms mismatch');
     }

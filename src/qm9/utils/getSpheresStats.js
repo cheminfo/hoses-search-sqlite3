@@ -7,14 +7,14 @@ export function getSpheresStats(stats) {
     sphereStats[key] = { key, spheres };
     for (const stat of Object.values(stats[key])) {
       const atomLabel = stat.sources[0].atomLabel;
-      let currentStats = spheres.filter(
+      let currentStats = spheres.find(
         (stats) =>
           stats.sphere === stat.sphere && stats.atomLabel === atomLabel,
-      )[0];
+      );
       if (!currentStats) {
         currentStats = {
           sphere: stat.sphere,
-          atomLabel: atomLabel,
+          atomLabel,
           min: stat.boxplot.min,
           max: stat.boxplot.max,
           diffs: [],

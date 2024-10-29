@@ -45,9 +45,10 @@ CREATE TABLE IF NOT EXISTS hoseCodes (
 );
 
 CREATE TABLE IF NOT EXISTS atoms (
-    atomID data_type PRIMARY KEY,
+    atomID INTEGER PRIMARY KEY AUTOINCREMENT,
     number data_type INTEGER NOT NULL,
     label data_type TEXT NOT NULL,
+    entryID data_type INTEGER NOT NULL,
     FOREIGN KEY (entryID) REFERENCES entries(entryID)
 );
 

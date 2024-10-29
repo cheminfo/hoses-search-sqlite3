@@ -34,12 +34,8 @@ CREATE TABLE IF NOT EXISTS energies (
 
 CREATE TABLE IF NOT EXISTS hoseCodes (
     hoseID data_type PRIMARY KEY,
-    hose data_type TEXT NOT NULL,
-    nucleus data_type TEXT,
-    creationDate data_type INTEGER,
+    value data_type TEXT NOT NULL,
     sphere data_type INTEGER NOT NULL,
-    hoseValue data_type INTEGER NOT NULL,
-    entryID data_type INTEGER NOT NULL,
     atomID data_type INTEGER NOT NULL,
     FOREIGN KEY (atomID) REFERENCES atoms(atomID)
 );

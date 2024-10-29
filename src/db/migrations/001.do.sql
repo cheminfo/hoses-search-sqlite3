@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS entries(
     entryID INTEGER PRIMARY KEY AUTOINCREMENT,
     nbAtoms data_type INTEGER NOT NULL,
-    idCode data_type TEXT NOT NULL, -- Structure chimique canonique
+    idCode data_type TEXT NOT NULL, -- Unique struture identifier
     coordinates data_type TEXT NOT NULL,
     mf data_type TEXT NOT NULL,
     mw data_type REAL NOT NULL,

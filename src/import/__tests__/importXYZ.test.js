@@ -5,6 +5,7 @@ import { test, expect } from 'vitest';
 
 import { getTempDB } from '../../db/getDB.js';
 import { importXYZ } from '../importXYZ.js';
+import { getAlgorithmID } from '../getAlgorithmID.js';
 
 test('importXYZ', async () => {
   const content = readFileSync(new URL('data/test.xyz', import.meta.url));
@@ -34,6 +35,7 @@ test('importXYZ', async () => {
           },
         },
       },
+      orbital: '2s',
     },
   };
   await importXYZ(content, db, options);
@@ -42,5 +44,9 @@ test('importXYZ', async () => {
   const insertedEntries = stmt.all();
   const stmtAtoms = db.prepare('SELECT * FROM atoms');
   const insertedAtoms = stmtAtoms.all();
+  for (let column in options.xyz.columns) {
+    getAlgorithmID(options.xyz.columns[column], db);
+  }
+  console.log(getAlgorithmID(options.xyz.columns['5'].algorithm, db));
   // checkDB
 });

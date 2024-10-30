@@ -14,10 +14,11 @@ CREATE TABLE IF NOT EXISTS entries (
 );
 
 CREATE TABLE IF NOT EXISTS algorithms (
-    algorithmID data_type PRIMARY KEY,
-    name data_type TEXT UNIQUE,
+    algorithmID INTEGER PRIMARY KEY AUTOINCREMENT,
+    name data_type TEXT,
     version data_type TEXT,
-    description data_type TEXT
+    description data_type TEXT,
+    UNIQUE(name, version)
 );
 
 CREATE TABLE IF NOT EXISTS energies (
@@ -42,8 +43,8 @@ CREATE TABLE IF NOT EXISTS hoseCodes (
 
 CREATE TABLE IF NOT EXISTS atoms (
     atomID INTEGER PRIMARY KEY AUTOINCREMENT,
-    molfileIndex data_type INTEGER NOT NULL,
     label data_type TEXT NOT NULL,
+    molfileIndex data_type INTEGER NOT NULL,
     entryID data_type INTEGER NOT NULL,
     FOREIGN KEY (entryID) REFERENCES entries(entryID)
 );

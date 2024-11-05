@@ -4,8 +4,8 @@ import { get } from 'node:http';
 import { test, expect } from 'vitest';
 
 import { getTempDB } from '../../db/getDB.js';
-import { importXYZ } from '../importXYZ.js';
 import { getAlgorithmID } from '../getAlgorithmID.js';
+import { importXYZ } from '../importXYZ.js';
 
 test('importXYZ', async () => {
   const content = readFileSync(new URL('data/test.xyz', import.meta.url));

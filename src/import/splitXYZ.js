@@ -7,13 +7,14 @@ export function splitXYZ(content) {
   let lines = content.split('\n');
   for (let line of lines) {
     if (line.match(/^[0-9]+$/)) {
+      if (entry !== undefined) entries.push(entry);
       entry = [];
-      entries.push(entry);
     }
     if (!entry) {
       throw new Error('No number of atoms found in the first line');
     }
     entry.push(line);
   }
+
   return entries.filter((entry) => entry.length > 0);
 }

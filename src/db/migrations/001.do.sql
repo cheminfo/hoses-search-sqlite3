@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS algorithms (
 );
 
 CREATE TABLE IF NOT EXISTS energies (
-    energyID data_type PRIMARY KEY,
+    energyID INTEGER PRIMARY KEY AUTOINCREMENT,
     orbital data_type TEXT NOT NULL,
     bindingEnergy data_type REAL,
     kineticEnergy  data_type REAL,

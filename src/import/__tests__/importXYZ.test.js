@@ -1,5 +1,4 @@
 import { readFileSync } from 'node:fs';
-import { get } from 'node:http';
 
 import { test, expect } from 'vitest';
 
@@ -35,8 +34,8 @@ test('importXYZ', async () => {
           },
         },
       },
-      orbital: '2s',
     },
+    orbital: '2s',
   };
   await importXYZ(content, db, options);
 

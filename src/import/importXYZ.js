@@ -7,11 +7,13 @@ import { splitXYZ } from './splitXYZ.js';
 export async function importXYZ(content, db, options = {}) {
   const xyzEntries = splitXYZ(content);
   for (const xyzLines of xyzEntries) {
-    const entry = await getXYZEnhancedEntry(xyzLines);
+    const entry = await getXYZEnhancedEntry(xyzLines, options);
+    // console.log(entry);
     insertEntry(entry, db);
     const lastEntryIndex = getLastRecordIndex('entries', db);
     for (let i = 0; i < entry.atoms.length; i++) {
       insertAtom(entry.atoms[i], i, lastEntryIndex, db);
+      // console.log(entry.atoms[i]);
     }
   }
 }

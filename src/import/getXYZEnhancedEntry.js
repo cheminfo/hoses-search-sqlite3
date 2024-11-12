@@ -6,6 +6,7 @@ import { convertXYZToMolfile } from '../qm9/utils/convertXYZToMolfile.js';
 const { Molecule } = OCL;
 
 export async function getXYZEnhancedEntry(lines, options = {}) {
+  const { xyz, orbital = null } = options;
   const entry = {};
   entry.nbAtoms = Number.parseInt(lines[0]);
   entry.comment = lines[1];
@@ -14,9 +15,30 @@ export async function getXYZEnhancedEntry(lines, options = {}) {
   const atoms = [];
   for (let i = 2; i < entry.nbAtoms + 2; i++) {
     const line = lines[i];
-    const [atom, x, y, z, ...properties] = line.split(/\s+/);
-    atoms.push({ atom, x, y, z, properties: properties.map(Number) });
-    cleanLines[i] = `${atom} ${x} ${y} ${z}`;
+    const [atomSymbol, x, y, z, ...properties] = line.split(/\s+/);
+    const atom = { atomSymbol, x, y, z, properties: properties.map(Number) };
+    // if (xyz?.columns) console.log(xyz.columns);
+    console.log(atom.properties);
+    // for (let i = 0; i < atom.properties.length; i++) {
+    if (xyz?.columns) {
+      let propertyIndex = 0;
+      for (let k in xyz.columns) {
+        // console.log(k, xyz.columns[`${k}`]);
+        // console.log(xyz.columns);
+        console.log(xyz.columns[k]);
+        atom.properties[propertyIndex] = {
+          value: atom.properties[propertyIndex],
+          algorithm: xyz.columns[`${k}`].algorithm,
+        };
+        console.log(atom.properties[propertyIndex]);
+        propertyIndex++;
+      }
+      // }
+    }
+
+    // console.log('>>> Atome :', atom);
+    atoms.push({ atomSymbol, x, y, z, properties: properties.map(Number) });
+    cleanLines[i] = `${atomSymbol} ${x} ${y} ${z}`;
   }
   entry.xyz = cleanLines.join('\n');
   entry.molfile3D = await convertXYZToMolfile(entry.xyz);

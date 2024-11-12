@@ -18,7 +18,8 @@ export async function getDB() {
     db = new DatabaseSync(join(path, 'db.sqlite'));
     // https://www.sqlite.org/wal.html
     // Activating WAL mode allows to get a speed improvement of 100x !!!
-    db.pragma('journal_mode = WAL');
+    db.exec('PRAGMA journal_mode = WAL');
+    db.exec('PRAGMA synchronous=NORMAL');
   }
   await prepareDB(db);
   return db;
@@ -36,6 +37,8 @@ WHERE type='table';`;
 
 export async function getTempDB() {
   const tempDB = new DatabaseSync(':memory:');
+  tempDB.exec('PRAGMA journal_mode = WAL');
+  tempDB.exec('PRAGMA synchronous=NORMAL');
   await prepareDB(tempDB);
   return tempDB;
 }

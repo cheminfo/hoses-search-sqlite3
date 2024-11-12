@@ -2,7 +2,7 @@ import { existsSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import sqLite from 'better-sqlite3';
+import { DatabaseSync } from 'node:sqlite';
 import Postgrator from 'postgrator';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -15,7 +15,7 @@ export async function getDB() {
     if (!existsSync(path)) {
       mkdirSync(path);
     }
-    db = sqLite(join(path, 'db.sqlite'));
+    db = new DatabaseSync(join(path, 'db.sqlite'));
     // https://www.sqlite.org/wal.html
     // Activating WAL mode allows to get a speed improvement of 100x !!!
     db.pragma('journal_mode = WAL');
@@ -35,7 +35,7 @@ WHERE type='table';`;
 }
 
 export async function getTempDB() {
-  const tempDB = sqLite(':memory:');
+  const tempDB = new DatabaseSync(':memory:');
   await prepareDB(tempDB);
   return tempDB;
 }

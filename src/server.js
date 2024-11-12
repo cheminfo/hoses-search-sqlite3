@@ -7,10 +7,9 @@ import fastifySwaggerUi from '@fastify/swagger-ui';
 import debugLibrary from 'debug';
 import Fastify from 'fastify';
 
-
 import { getDB, getTempDB } from './db/getDB.js';
 import { importXYZ } from './import/importXYZ.js';
-import insertEntry from './import/insertEntry.js';
+import { insertEntry } from './import/insertEntry.js';
 import v1 from './v1/v1.js';
 
 const debug = debugLibrary('server');

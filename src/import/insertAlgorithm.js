@@ -1,5 +1,5 @@
-import { getContactID } from './getContactID';
-import { insertContact } from './insertContact';
+import { getContactID } from './getContactID.js';
+import { insertContact } from './insertContact.js';
 
 export function insertAlgorithm(algorithm, contactMail, db) {
   let contactID = getContactID(contactMail, db);

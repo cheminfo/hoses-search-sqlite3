@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "dev": "DEBUG=* node --watch --experimental-sqlite ./src/server.js",
+    "test": "npx --node-options='--experimental-sqlite' vitest",
     "eslint": "eslint src --cache",
     "eslint-fix": "npm run eslint -- --fix",
     "prettier": "prettier --check src",
     "prettier-write": "prettier --write src",
-    "start": "node src/server.js"
+    "start": "node --experimental-sqlite  src/server.js"
   },
   "author": "",
   "license": "ISC",

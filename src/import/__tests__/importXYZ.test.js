@@ -11,7 +11,7 @@ test('importXYZ', async () => {
   const db = await getTempDB();
   const options = {
     contact: {
-      email: '',
+      email: 'test@test.ch',
     },
     xyz: {
       columns: [
@@ -45,15 +45,31 @@ test('importXYZ', async () => {
       ],
     },
   };
+
   await importXYZ(content, db, options);
 
-  const stmt = db.prepare('SELECT * FROM entries');
-  const insertedEntries = stmt.all();
+  const stmtEntries = db.prepare('SELECT * FROM entries');
+  const insertedEntries = stmtEntries.all();
+  for (let entry of insertedEntries) delete entry.lastModificationDate;
+  expect(insertedEntries).toMatchSnapshot('entriesTable');
+
   const stmtAtoms = db.prepare('SELECT * FROM atoms');
   const insertedAtoms = stmtAtoms.all();
-  for (let column in options.xyz.columns) {
-    getAlgorithmID(options.xyz.columns[column], db);
-  }
-  console.log(getAlgorithmID(options.xyz.columns['5'].algorithm, db));
-  // checkDB
+  expect(insertedAtoms).toMatchSnapshot('atomsTable');
+
+  const stmtEnergies = db.prepare('SELECT * FROM energies');
+  const insertedEnergies = stmtEnergies.all();
+  expect(insertedEnergies).toMatchSnapshot('energiesTable');
+
+  const stmtAlgorithms = db.prepare('SELECT * FROM algorithms');
+  const insertedAlgorithms = stmtAlgorithms.all();
+  expect(insertedAlgorithms).toMatchFileSnapshot('algorithmsTable');
+
+  const stmtHoses = db.prepare('SELECT * FROM hoseCodes');
+  const insertedHoses = stmtHoses.all();
+  expect(insertedHoses).toMatchSnapshot('hoseCodesTable');
+
+  const stmtContacts = db.prepare('SELECT * FROM contacts');
+  const insertedContacts = stmtContacts.all();
+  expect(insertedContacts).toMatchSnapshot('contactsTable');
 });

@@ -1,0 +1,26 @@
+[
+  {
+    "algorithmID": 1,
+    "contactID": 1,
+    "data_type": null,
+    "description": "GW_charged",
+    "name": "GW_charged",
+    "version": "1.0.0",
+  },
+  {
+    "algorithmID": 2,
+    "contactID": 1,
+    "data_type": null,
+    "description": "dKS_charged",
+    "name": "dKS_charged",
+    "version": "1.0.0",
+  },
+  {
+    "algorithmID": 3,
+    "contactID": 1,
+    "data_type": null,
+    "description": "dKS_neutral",
+    "name": "dKS_neutral",
+    "version": "1.0.0",
+  },
+]

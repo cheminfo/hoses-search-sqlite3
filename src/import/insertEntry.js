@@ -3,7 +3,7 @@ export function insertEntry(entry, db) {
         entries(mf, nbAtoms, idCode, coordinates, mw, comment, ssIndex, molfile2D, molfile3D, xyz, lastModificationDate) 
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`);
   const now = Date.now();
-  insertStmt.run(
+  const newEntryRecord = insertStmt.run(
     entry.mf,
     entry.nbAtoms,
     entry.idCode,
@@ -16,4 +16,5 @@ export function insertEntry(entry, db) {
     entry.xyz,
     now,
   );
+  return newEntryRecord.lastInsertRowid;
 }

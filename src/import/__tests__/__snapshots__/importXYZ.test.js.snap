@@ -1,0 +1,1204 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`importXYZ > atomsTable 1`] = `
+[
+  {
+    "atomID": 1,
+    "entryID": 1,
+    "label": "O",
+    "molfileIndex": 0,
+  },
+  {
+    "atomID": 2,
+    "entryID": 1,
+    "label": "H",
+    "molfileIndex": 1,
+  },
+  {
+    "atomID": 3,
+    "entryID": 1,
+    "label": "H",
+    "molfileIndex": 2,
+  },
+  {
+    "atomID": 4,
+    "entryID": 2,
+    "label": "C",
+    "molfileIndex": 0,
+  },
+  {
+    "atomID": 5,
+    "entryID": 2,
+    "label": "H",
+    "molfileIndex": 1,
+  },
+  {
+    "atomID": 6,
+    "entryID": 2,
+    "label": "H",
+    "molfileIndex": 2,
+  },
+  {
+    "atomID": 7,
+    "entryID": 2,
+    "label": "H",
+    "molfileIndex": 3,
+  },
+  {
+    "atomID": 8,
+    "entryID": 2,
+    "label": "H",
+    "molfileIndex": 4,
+  },
+  {
+    "atomID": 9,
+    "entryID": 3,
+    "label": "C",
+    "molfileIndex": 0,
+  },
+  {
+    "atomID": 10,
+    "entryID": 3,
+    "label": "H",
+    "molfileIndex": 1,
+  },
+  {
+    "atomID": 11,
+    "entryID": 3,
+    "label": "H",
+    "molfileIndex": 2,
+  },
+  {
+    "atomID": 12,
+    "entryID": 3,
+    "label": "H",
+    "molfileIndex": 3,
+  },
+  {
+    "atomID": 13,
+    "entryID": 3,
+    "label": "H",
+    "molfileIndex": 4,
+  },
+  {
+    "atomID": 14,
+    "entryID": 4,
+    "label": "C",
+    "molfileIndex": 0,
+  },
+  {
+    "atomID": 15,
+    "entryID": 4,
+    "label": "O",
+    "molfileIndex": 1,
+  },
+  {
+    "atomID": 16,
+    "entryID": 4,
+    "label": "H",
+    "molfileIndex": 2,
+  },
+  {
+    "atomID": 17,
+    "entryID": 4,
+    "label": "H",
+    "molfileIndex": 3,
+  },
+]
+`;
+
+exports[`importXYZ > contactsTable 1`] = `
+[
+  {
+    "contactID": 1,
+    "mail": "test@test.ch",
+  },
+]
+`;
+
+exports[`importXYZ > energiesTable 1`] = `
+[
+  {
+    "algorithmID": 1,
+    "atomID": 1,
+    "bindingEnergy": 539.0733,
+    "energyID": 1,
+    "kineticEnergy": null,
+    "orbital": "2s",
+    "sourceEnergy": null,
+  },
+  {
+    "algorithmID": 2,
+    "atomID": 1,
+    "bindingEnergy": 545.807,
+    "energyID": 2,
+    "kineticEnergy": null,
+    "orbital": "2s",
+    "sourceEnergy": null,
+  },
+  {
+    "algorithmID": 3,
+    "atomID": 1,
+    "bindingEnergy": 532.643,
+    "energyID": 3,
+    "kineticEnergy": null,
+    "orbital": "2s",
+    "sourceEnergy": null,
+  },
+  {
+    "algorithmID": 1,
+    "atomID": 4,
+    "bindingEnergy": 290.5991,
+    "energyID": 4,
+    "kineticEnergy": null,
+    "orbital": "2s",
+    "sourceEnergy": null,
+  },
+  {
+    "algorithmID": 3,
+    "atomID": 4,
+    "bindingEnergy": 285.844,
+    "energyID": 5,
+    "kineticEnergy": null,
+    "orbital": "2s",
+    "sourceEnergy": null,
+  },
+  {
+    "algorithmID": 1,
+    "atomID": 9,
+    "bindingEnergy": 290.5991,
+    "energyID": 6,
+    "kineticEnergy": null,
+    "orbital": "2s",
+    "sourceEnergy": null,
+  },
+  {
+    "algorithmID": 3,
+    "atomID": 9,
+    "bindingEnergy": 285.844,
+    "energyID": 7,
+    "kineticEnergy": null,
+    "orbital": "2s",
+    "sourceEnergy": null,
+  },
+  {
+    "algorithmID": 1,
+    "atomID": 14,
+    "bindingEnergy": 294.5287,
+    "energyID": 8,
+    "kineticEnergy": null,
+    "orbital": "2s",
+    "sourceEnergy": null,
+  },
+  {
+    "algorithmID": 2,
+    "atomID": 14,
+    "bindingEnergy": 294.654,
+    "energyID": 9,
+    "kineticEnergy": null,
+    "orbital": "2s",
+    "sourceEnergy": null,
+  },
+  {
+    "algorithmID": 3,
+    "atomID": 14,
+    "bindingEnergy": 284.596,
+    "energyID": 10,
+    "kineticEnergy": null,
+    "orbital": "2s",
+    "sourceEnergy": null,
+  },
+  {
+    "algorithmID": 1,
+    "atomID": 15,
+    "bindingEnergy": 538.6921,
+    "energyID": 11,
+    "kineticEnergy": null,
+    "orbital": "2s",
+    "sourceEnergy": null,
+  },
+  {
+    "algorithmID": 2,
+    "atomID": 15,
+    "bindingEnergy": 540.71,
+    "energyID": 12,
+    "kineticEnergy": null,
+    "orbital": "2s",
+    "sourceEnergy": null,
+  },
+  {
+    "algorithmID": 3,
+    "atomID": 15,
+    "bindingEnergy": 529.695,
+    "energyID": 13,
+    "kineticEnergy": null,
+    "orbital": "2s",
+    "sourceEnergy": null,
+  },
+]
+`;
+
+exports[`importXYZ > entriesTable 1`] = `
+[
+  {
+    "comment": "Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"",
+    "coordinates": "#qeSE??}LAcq~\\Je\\AOcIR@EhAT\`D",
+    "entryID": 1,
+    "idCode": "fI@@",
+    "mf": "H2O",
+    "molfile2D": "Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+Actelion Java MolfileCreator 1.0
+
+  3  2  0  0  0  0  0  0  0  0999 V2000
+    6.9671    8.4598    6.9778 O   0  0  0  0  0  0  0  0  0  1  0  0
+    7.1148    6.9671    6.9685 H   0  0  0  0  0  0  0  0  0  2  0  0
+    8.3776    8.9702    6.9671 H   0  0  0  0  0  0  0  0  0  3  0  0
+  2  1  1  0  0  0  0
+  3  1  1  0  0  0  0
+M  END
+",
+    "molfile3D": "Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+ OpenBabel10292409443D
+Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+  3  2  0  0  0  0  0  0  0  0999 V2000
+    4.5954    4.5000    4.5009 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5000    5.4641    4.5069 O   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4110    5.7938    4.5000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0  0  0  0
+  3  2  1  0  0  0  0
+M  END
+",
+    "mw": 18.01488,
+    "nbAtoms": 3,
+    "ssIndex": {
+      "data": [
+        0,
+        0,
+        0,
+        16,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+      ],
+      "type": "Buffer",
+    },
+    "xyz": "3
+Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+H 4.59540796 4.50000000 4.50085045
+O 4.50000000 5.46412774 4.50692028
+H 5.41100791 5.79382445 4.50000000",
+  },
+  {
+    "comment": "Lattice="10.55732741 0.0 0.0 0.0 10.47433493 0.0 0.0 0.0 10.78853619" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"",
+    "coordinates": "#qbBH]ZoUhWXE??vtAjA~Mra\\AJDHYjjwg^PjR@DhA|\`D",
+    "entryID": 2,
+    "idCode": "fH@@",
+    "mf": "CH4",
+    "molfile2D": "Lattice="10.55732741 0.0 0.0 0.0 10.47433493 0.0 0.0 0.0 10.78853619" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+Actelion Java MolfileCreator 1.0
+
+  5  4  0  0  0  0  0  0  0  0999 V2000
+    5.0298    5.5952    5.3874 C   0  0  0  0  0  0  0  0  0  1  0  0
+    5.0446    4.5000    5.3813 H   0  0  0  0  0  0  0  0  0  2  0  0
+    6.0573    5.9743    5.3796 H   0  0  0  0  0  0  0  0  0  3  0  0
+    4.5000    5.9580    4.5000 H   0  0  0  0  0  0  0  0  0  4  0  0
+    4.5170    5.9484    6.2885 H   0  0  0  0  0  0  0  0  0  5  0  0
+  1  5  1  0  0  0  0
+  2  1  1  0  0  0  0
+  3  1  1  0  0  0  0
+  4  1  1  0  0  0  0
+M  END
+",
+    "molfile3D": "Lattice="10.55732741 0.0 0.0 0.0 10.47433493 0.0 0.0 0.0 10.78853619" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+ OpenBabel10082413443D
+Lattice="10.55732741 0.0 0.0 0.0 10.47433493 0.0 0.0 0.0 10.78853619" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+  5  4  0  0  0  0  0  0  0  0999 V2000
+    5.0298    5.5952    5.3874 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.0446    4.5000    5.3813 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0573    5.9743    5.3796 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5000    5.9580    4.5000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5170    5.9484    6.2885 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  5  1  0  0  0  0
+  2  1  1  0  0  0  0
+  3  1  1  0  0  0  0
+  4  1  1  0  0  0  0
+M  END
+",
+    "mw": 16.04276,
+    "nbAtoms": 5,
+    "ssIndex": {
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+      ],
+      "type": "Buffer",
+    },
+    "xyz": "5
+Lattice="10.55732741 0.0 0.0 0.0 10.47433493 0.0 0.0 0.0 10.78853619" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+C 5.02975104 5.59520017 5.38737141
+H 5.04461553 4.50000000 5.38133262
+H 6.05732741 5.97433493 5.37961885
+H 4.50000000 5.95804208 4.50000000
+H 4.51704914 5.94841095 6.28853619",
+  },
+  {
+    "comment": "Lattice="10.55732741 0.0 0.0 0.0 10.47433493 0.0 0.0 0.0 10.78853619" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"",
+    "coordinates": "#qbBH]ZoUhWXE??vtAjA~Mra\\AJDHYjjwg^PjR@DhA|\`D",
+    "entryID": 3,
+    "idCode": "fH@@",
+    "mf": "CH4",
+    "molfile2D": "Lattice="10.55732741 0.0 0.0 0.0 10.47433493 0.0 0.0 0.0 10.78853619" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+Actelion Java MolfileCreator 1.0
+
+  5  4  0  0  0  0  0  0  0  0999 V2000
+    5.0298    5.5952    5.3874 C   0  0  0  0  0  0  0  0  0  1  0  0
+    5.0446    4.5000    5.3813 H   0  0  0  0  0  0  0  0  0  2  0  0
+    6.0573    5.9743    5.3796 H   0  0  0  0  0  0  0  0  0  3  0  0
+    4.5000    5.9580    4.5000 H   0  0  0  0  0  0  0  0  0  4  0  0
+    4.5170    5.9484    6.2885 H   0  0  0  0  0  0  0  0  0  5  0  0
+  1  5  1  0  0  0  0
+  2  1  1  0  0  0  0
+  3  1  1  0  0  0  0
+  4  1  1  0  0  0  0
+M  END
+",
+    "molfile3D": "Lattice="10.55732741 0.0 0.0 0.0 10.47433493 0.0 0.0 0.0 10.78853619" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+ OpenBabel10082413443D
+Lattice="10.55732741 0.0 0.0 0.0 10.47433493 0.0 0.0 0.0 10.78853619" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+  5  4  0  0  0  0  0  0  0  0999 V2000
+    5.0298    5.5952    5.3874 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.0446    4.5000    5.3813 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0573    5.9743    5.3796 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5000    5.9580    4.5000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5170    5.9484    6.2885 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  5  1  0  0  0  0
+  2  1  1  0  0  0  0
+  3  1  1  0  0  0  0
+  4  1  1  0  0  0  0
+M  END
+",
+    "mw": 16.04276,
+    "nbAtoms": 5,
+    "ssIndex": {
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+      ],
+      "type": "Buffer",
+    },
+    "xyz": "5
+Lattice="10.55732741 0.0 0.0 0.0 10.47433493 0.0 0.0 0.0 10.78853619" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+C 5.02975104 5.59520017 5.38737141
+H 5.04461553 4.50000000 5.38133262
+H 6.05732741 5.97433493 5.37961885
+H 4.50000000 5.95804208 4.50000000
+H 4.51704914 5.94841095 6.28853619",
+  },
+  {
+    "comment": "Lattice="10.89392123 0.0 0.0 0.0 10.81307256 0.0 0.0 0.0 9.01510639" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"",
+    "coordinates": "#qPgx@@B[~PubaP\`C~x\\^S?CXA]Dhr@OpA?@D",
+    "entryID": 4,
+    "idCode": "eFHBJ@",
+    "mf": "CH2O",
+    "molfile2D": "Lattice="10.89392123 0.0 0.0 0.0 10.81307256 0.0 0.0 0.0 9.01510639" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+Actelion Java MolfileCreator 1.0
+
+  4  3  0  0  0  0  0  0  0  0999 V2000
+    5.4550    5.7074    4.5057 C   0  0  0  0  0  0  0  0  0  1  0  0
+    5.4714    4.5000    4.5000 O   0  0  0  0  0  0  0  0  0  2  0  0
+    6.3939    6.3131    4.5017 H   0  0  0  0  0  0  0  0  0  3  0  0
+    4.5000    6.2873    4.5151 H   0  0  0  0  0  0  0  0  0  4  0  0
+  2  1  2  0  0  0  0
+  1  4  1  0  0  0  0
+  3  1  1  0  0  0  0
+M  END
+",
+    "molfile3D": "Lattice="10.89392123 0.0 0.0 0.0 10.81307256 0.0 0.0 0.0 9.01510639" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+ OpenBabel10082413443D
+Lattice="10.89392123 0.0 0.0 0.0 10.81307256 0.0 0.0 0.0 9.01510639" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+  4  3  0  0  0  0  0  0  0  0999 V2000
+    5.4550    5.7074    4.5057 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4714    4.5000    4.5000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3939    6.3131    4.5017 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5000    6.2873    4.5151 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  4  1  0  0  0  0
+  2  1  2  0  0  0  0
+  3  1  1  0  0  0  0
+M  END
+",
+    "mw": 30.02588,
+    "nbAtoms": 4,
+    "ssIndex": {
+      "data": [
+        16,
+        0,
+        0,
+        17,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+      ],
+      "type": "Buffer",
+    },
+    "xyz": "4
+Lattice="10.89392123 0.0 0.0 0.0 10.81307256 0.0 0.0 0.0 9.01510639" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+C 5.45500662 5.70744485 4.50565078
+O 5.47139525 4.50000000 4.50000000
+H 6.39392123 6.31307256 4.50174003
+H 4.50000000 6.28730276 4.51510639",
+  },
+]
+`;
+
+exports[`importXYZ > hoseCodesTable 1`] = `
+[
+  {
+    "atomID": 1,
+    "hoseID": null,
+    "sphere": 0,
+    "value": "fI@GEPZguozTOeT",
+  },
+  {
+    "atomID": 1,
+    "hoseID": null,
+    "sphere": 1,
+    "value": "fI@GEPZguozTOeT",
+  },
+  {
+    "atomID": 1,
+    "hoseID": null,
+    "sphere": 2,
+    "value": "fI@GEPZguozTOeT",
+  },
+  {
+    "atomID": 1,
+    "hoseID": null,
+    "sphere": 3,
+    "value": "fI@GEPZguozTOeT",
+  },
+  {
+    "atomID": 1,
+    "hoseID": null,
+    "sphere": 4,
+    "value": "fI@GEPZguozTOeT",
+  },
+  {
+    "atomID": 2,
+    "hoseID": null,
+    "sphere": 0,
+    "value": "fHdrARaDj\`",
+  },
+  {
+    "atomID": 2,
+    "hoseID": null,
+    "sphere": 1,
+    "value": "eFJHfXp]T~jtdDRj@",
+  },
+  {
+    "atomID": 2,
+    "hoseID": null,
+    "sphere": 2,
+    "value": "eFJHfXp]T~jtdDRj@",
+  },
+  {
+    "atomID": 2,
+    "hoseID": null,
+    "sphere": 3,
+    "value": "eFJHfXp]T~jtdDRj@",
+  },
+  {
+    "atomID": 2,
+    "hoseID": null,
+    "sphere": 4,
+    "value": "eFJHfXp]T~jtdDRj@",
+  },
+  {
+    "atomID": 3,
+    "hoseID": null,
+    "sphere": 0,
+    "value": "fHdrARaDj\`",
+  },
+  {
+    "atomID": 3,
+    "hoseID": null,
+    "sphere": 1,
+    "value": "eFJHfXp]T~jtdDRj@",
+  },
+  {
+    "atomID": 3,
+    "hoseID": null,
+    "sphere": 2,
+    "value": "eFJHfXp]T~jtdDRj@",
+  },
+  {
+    "atomID": 3,
+    "hoseID": null,
+    "sphere": 3,
+    "value": "eFJHfXp]T~jtdDRj@",
+  },
+  {
+    "atomID": 3,
+    "hoseID": null,
+    "sphere": 4,
+    "value": "eFJHfXp]T~jtdDRj@",
+  },
+  {
+    "atomID": 4,
+    "hoseID": null,
+    "sphere": 0,
+    "value": "fH@NJ\`uOkth\\Jh",
+  },
+  {
+    "atomID": 4,
+    "hoseID": null,
+    "sphere": 1,
+    "value": "fH@NJ\`uOkth\\Jh",
+  },
+  {
+    "atomID": 4,
+    "hoseID": null,
+    "sphere": 2,
+    "value": "fH@NJ\`uOkth\\Jh",
+  },
+  {
+    "atomID": 4,
+    "hoseID": null,
+    "sphere": 3,
+    "value": "fH@NJ\`uOkth\\Jh",
+  },
+  {
+    "atomID": 4,
+    "hoseID": null,
+    "sphere": 4,
+    "value": "fH@NJ\`uOkth\\Jh",
+  },
+  {
+    "atomID": 5,
+    "hoseID": null,
+    "sphere": 0,
+    "value": "fHdrARaDj\`",
+  },
+  {
+    "atomID": 5,
+    "hoseID": null,
+    "sphere": 1,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 5,
+    "hoseID": null,
+    "sphere": 2,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 5,
+    "hoseID": null,
+    "sphere": 3,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 5,
+    "hoseID": null,
+    "sphere": 4,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 6,
+    "hoseID": null,
+    "sphere": 0,
+    "value": "fHdrARaDj\`",
+  },
+  {
+    "atomID": 6,
+    "hoseID": null,
+    "sphere": 1,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 6,
+    "hoseID": null,
+    "sphere": 2,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 6,
+    "hoseID": null,
+    "sphere": 3,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 6,
+    "hoseID": null,
+    "sphere": 4,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 7,
+    "hoseID": null,
+    "sphere": 0,
+    "value": "fHdrARaDj\`",
+  },
+  {
+    "atomID": 7,
+    "hoseID": null,
+    "sphere": 1,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 7,
+    "hoseID": null,
+    "sphere": 2,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 7,
+    "hoseID": null,
+    "sphere": 3,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 7,
+    "hoseID": null,
+    "sphere": 4,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 8,
+    "hoseID": null,
+    "sphere": 0,
+    "value": "fHdrARaDj\`",
+  },
+  {
+    "atomID": 8,
+    "hoseID": null,
+    "sphere": 1,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 8,
+    "hoseID": null,
+    "sphere": 2,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 8,
+    "hoseID": null,
+    "sphere": 3,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 8,
+    "hoseID": null,
+    "sphere": 4,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 9,
+    "hoseID": null,
+    "sphere": 0,
+    "value": "fH@NJ\`uOkth\\Jh",
+  },
+  {
+    "atomID": 9,
+    "hoseID": null,
+    "sphere": 1,
+    "value": "fH@NJ\`uOkth\\Jh",
+  },
+  {
+    "atomID": 9,
+    "hoseID": null,
+    "sphere": 2,
+    "value": "fH@NJ\`uOkth\\Jh",
+  },
+  {
+    "atomID": 9,
+    "hoseID": null,
+    "sphere": 3,
+    "value": "fH@NJ\`uOkth\\Jh",
+  },
+  {
+    "atomID": 9,
+    "hoseID": null,
+    "sphere": 4,
+    "value": "fH@NJ\`uOkth\\Jh",
+  },
+  {
+    "atomID": 10,
+    "hoseID": null,
+    "sphere": 0,
+    "value": "fHdrARaDj\`",
+  },
+  {
+    "atomID": 10,
+    "hoseID": null,
+    "sphere": 1,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 10,
+    "hoseID": null,
+    "sphere": 2,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 10,
+    "hoseID": null,
+    "sphere": 3,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 10,
+    "hoseID": null,
+    "sphere": 4,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 11,
+    "hoseID": null,
+    "sphere": 0,
+    "value": "fHdrARaDj\`",
+  },
+  {
+    "atomID": 11,
+    "hoseID": null,
+    "sphere": 1,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 11,
+    "hoseID": null,
+    "sphere": 2,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 11,
+    "hoseID": null,
+    "sphere": 3,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 11,
+    "hoseID": null,
+    "sphere": 4,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 12,
+    "hoseID": null,
+    "sphere": 0,
+    "value": "fHdrARaDj\`",
+  },
+  {
+    "atomID": 12,
+    "hoseID": null,
+    "sphere": 1,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 12,
+    "hoseID": null,
+    "sphere": 2,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 12,
+    "hoseID": null,
+    "sphere": 3,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 12,
+    "hoseID": null,
+    "sphere": 4,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 13,
+    "hoseID": null,
+    "sphere": 0,
+    "value": "fHdrARaDj\`",
+  },
+  {
+    "atomID": 13,
+    "hoseID": null,
+    "sphere": 1,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 13,
+    "hoseID": null,
+    "sphere": 2,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 13,
+    "hoseID": null,
+    "sphere": 3,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 13,
+    "hoseID": null,
+    "sphere": 4,
+    "value": "eFBBYcAuSznRPQJh",
+  },
+  {
+    "atomID": 14,
+    "hoseID": null,
+    "sphere": 0,
+    "value": "fH@NJ\`uOk_th\\Jh",
+  },
+  {
+    "atomID": 14,
+    "hoseID": null,
+    "sphere": 1,
+    "value": "eFHBJGETFdY|cviINET",
+  },
+  {
+    "atomID": 14,
+    "hoseID": null,
+    "sphere": 2,
+    "value": "eFHBJGETFdY|cviINET",
+  },
+  {
+    "atomID": 14,
+    "hoseID": null,
+    "sphere": 3,
+    "value": "eFHBJGETFdY|cviINET",
+  },
+  {
+    "atomID": 14,
+    "hoseID": null,
+    "sphere": 4,
+    "value": "eFHBJGETFdY|cviINET",
+  },
+  {
+    "atomID": 15,
+    "hoseID": null,
+    "sphere": 0,
+    "value": "fI@GEPZgtzTOeT",
+  },
+  {
+    "atomID": 15,
+    "hoseID": null,
+    "sphere": 1,
+    "value": "eFHBJGDTFdY|cviHOeT",
+  },
+  {
+    "atomID": 15,
+    "hoseID": null,
+    "sphere": 2,
+    "value": "eFHBJGDTFdY|cviHOeT",
+  },
+  {
+    "atomID": 15,
+    "hoseID": null,
+    "sphere": 3,
+    "value": "eFHBJGDTFdY|cviHOeT",
+  },
+  {
+    "atomID": 15,
+    "hoseID": null,
+    "sphere": 4,
+    "value": "eFHBJGDTFdY|cviHOeT",
+  },
+  {
+    "atomID": 16,
+    "hoseID": null,
+    "sphere": 0,
+    "value": "fHdrARaDj\`",
+  },
+  {
+    "atomID": 16,
+    "hoseID": null,
+    "sphere": 1,
+    "value": "eFBBYcAuSzkRPQJh",
+  },
+  {
+    "atomID": 16,
+    "hoseID": null,
+    "sphere": 2,
+    "value": "eMJDfTfPzYWsVo~d\`bUP",
+  },
+  {
+    "atomID": 16,
+    "hoseID": null,
+    "sphere": 3,
+    "value": "eMJDfTfPzYWsVo~d\`bUP",
+  },
+  {
+    "atomID": 16,
+    "hoseID": null,
+    "sphere": 4,
+    "value": "eMJDfTfPzYWsVo~d\`bUP",
+  },
+  {
+    "atomID": 17,
+    "hoseID": null,
+    "sphere": 0,
+    "value": "fHdrARaDj\`",
+  },
+  {
+    "atomID": 17,
+    "hoseID": null,
+    "sphere": 1,
+    "value": "eFBBYcAuSzkRPQJh",
+  },
+  {
+    "atomID": 17,
+    "hoseID": null,
+    "sphere": 2,
+    "value": "eMJDfTfPzYWsVo~d\`bUP",
+  },
+  {
+    "atomID": 17,
+    "hoseID": null,
+    "sphere": 3,
+    "value": "eMJDfTfPzYWsVo~d\`bUP",
+  },
+  {
+    "atomID": 17,
+    "hoseID": null,
+    "sphere": 4,
+    "value": "eMJDfTfPzYWsVo~d\`bUP",
+  },
+]
+`;

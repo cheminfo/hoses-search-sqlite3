@@ -6,7 +6,7 @@ import { convertXYZToMolfile } from '../qm9/utils/convertXYZToMolfile.js';
 const { Molecule } = OCL;
 
 export async function getXYZEnhancedEntry(lines, options = {}) {
-  const { xyz, orbital = null } = options;
+  const { xyz, contact } = options;
   const entry = {};
   entry.nbAtoms = Number.parseInt(lines[0]);
   entry.comment = lines[1];
@@ -17,27 +17,17 @@ export async function getXYZEnhancedEntry(lines, options = {}) {
     const line = lines[i];
     const [atomSymbol, x, y, z, ...properties] = line.split(/\s+/);
     const atom = { atomSymbol, x, y, z, properties: properties.map(Number) };
-    // if (xyz?.columns) console.log(xyz.columns);
-    console.log(atom.properties);
-    // for (let i = 0; i < atom.properties.length; i++) {
     if (xyz?.columns) {
-      let propertyIndex = 0;
-      for (let k in xyz.columns) {
-        // console.log(k, xyz.columns[`${k}`]);
-        // console.log(xyz.columns);
-        console.log(xyz.columns[k]);
-        atom.properties[propertyIndex] = {
-          value: atom.properties[propertyIndex],
-          algorithm: xyz.columns[`${k}`].algorithm,
+      for (let i = 0; i < atom.properties.length; i++) {
+        atom.properties[i] = {
+          energy: atom.properties[i],
+          algorithm: xyz.columns[i].algorithm,
+          orbital: xyz.columns[i].orbital,
+          contact: contact.email,
         };
-        console.log(atom.properties[propertyIndex]);
-        propertyIndex++;
       }
-      // }
     }
-
-    // console.log('>>> Atome :', atom);
-    atoms.push({ atomSymbol, x, y, z, properties: properties.map(Number) });
+    atoms.push(atom);
     cleanLines[i] = `${atomSymbol} ${x} ${y} ${z}`;
   }
   entry.xyz = cleanLines.join('\n');
@@ -53,7 +43,8 @@ export async function getXYZEnhancedEntry(lines, options = {}) {
   for (let i = 0; i < map.length; i++) {
     const sourceAtom = map[i];
     entry.atoms.push({ ...atoms[sourceAtom], hoses: hoses[i] });
-    // console.log(entry.atoms);
+
+    // console.log(atoms[sourceAtom]);
   }
 
   entry.mf = molecule.getMolecularFormula().formula;
@@ -68,6 +59,7 @@ export async function getXYZEnhancedEntry(lines, options = {}) {
   entry.ssIndex = getSSIndex(molecule);
   // entry.hoses = calculateHoseCodes(molecule, entry, options);
   // Object.keys(entry).forEach((prop) => console.log(prop));
+  // console.log(entry);
   return entry;
 }
 

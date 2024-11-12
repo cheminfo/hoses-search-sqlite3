@@ -18,7 +18,9 @@ CREATE TABLE IF NOT EXISTS algorithms (
     name data_type TEXT,
     version data_type TEXT,
     description data_type TEXT,
-    UNIQUE(name, version)
+    contactID, data_type INTEGER,
+    UNIQUE(name, version),
+    FOREIGN KEY (contactID) REFERENCES contacts(contactID)
 );
 
 CREATE TABLE IF NOT EXISTS energies (
@@ -48,5 +50,11 @@ CREATE TABLE IF NOT EXISTS atoms (
     entryID data_type INTEGER NOT NULL,
     FOREIGN KEY (entryID) REFERENCES entries(entryID)
 );
+
+CREATE TABLE IF NOT EXISTS contacts (
+    contactID INTEGER PRIMARY KEY AUTOINCREMENT,
+    mail data_type TEXT NOT NULL,
+    UNIQUE(mail)
+)
 
 

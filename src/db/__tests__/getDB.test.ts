@@ -15,6 +15,7 @@ test('getDB', async () => {
     'energies',
     'hoseCodes',
     'atoms',
+    'contacts',
   ]);
   db.close();
 });

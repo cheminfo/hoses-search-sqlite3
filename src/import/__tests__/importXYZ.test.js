@@ -10,32 +10,40 @@ test('importXYZ', async () => {
   const content = readFileSync(new URL('data/test.xyz', import.meta.url));
   const db = await getTempDB();
   const options = {
+    contact: {
+      email: '',
+    },
     xyz: {
-      columns: {
-        4: {
+      columns: [
+        {
+          column: 4,
+          orbital: '2s',
           algorithm: {
             name: 'GW_charged',
             version: '1.0.0',
             description: 'GW_charged',
           },
         },
-        5: {
+        {
+          column: 5,
+          orbital: '2s',
           algorithm: {
             name: 'dKS_charged',
             version: '1.0.0',
             description: 'dKS_charged',
           },
         },
-        6: {
+        {
+          column: 6,
+          orbital: '2s',
           algorithm: {
             name: 'dKS_neutral',
             version: '1.0.0',
             description: 'dKS_neutral',
           },
         },
-      },
+      ],
     },
-    orbital: '2s',
   };
   await importXYZ(content, db, options);
 

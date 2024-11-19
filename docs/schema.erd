@@ -1295,7 +1295,7 @@
       "mjxUNxG3uIJllQo5qrP83": {
         "id": "mjxUNxG3uIJllQo5qrP83",
         "identification": false,
-        "relationshipType": 8,
+        "relationshipType": 16,
         "startRelationshipType": 2,
         "start": {
           "tableId": "NzyDrQ2UD_nz_0Rvpy3W7",
@@ -1316,7 +1316,7 @@
           "direction": 1
         },
         "meta": {
-          "updateAt": 1731403539706,
+          "updateAt": 1732009657826,
           "createAt": 1731403539706
         }
       }
@@ -1459,7 +1459,9 @@
       "relationshipEntities",
       1731403539702,
       -1,
-      {}
+      {
+        "relationshipType": 1732009657825
+      }
     ]
   }
 }

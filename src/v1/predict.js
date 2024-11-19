@@ -7,7 +7,7 @@ export default function predict(fastify) {
   fastify.route({
     url: '/v1/predict',
     method: ['GET', 'POST'],
-    handler: getInfo,
+    handler: predict,
     scheme: {
       summary: '$retrieve information from a molfile',
       description: '',
@@ -25,7 +25,7 @@ export default function predict(fastify) {
   });
 }
 
-async function getInfo(request, response) {
+async function getPrediction(request, response) {
   const query = request.query;
   const molecule = getMolecule(query);
 

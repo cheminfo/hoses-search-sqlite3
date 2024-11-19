@@ -21,6 +21,7 @@ export async function importXYZ(content, db, options = {}) {
       if (entry.atoms[i]?.hoses) {
         for (let h = 0; h < entry.atoms[i].hoses.length; h++) {
           insertHose(entry.atoms[i].hoses[h], atomID, db);
+          // console.log(entry.atoms[i].hoses[h], atomID);
         }
       }
     }

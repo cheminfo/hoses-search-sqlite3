@@ -36,12 +36,13 @@ export async function getXYZEnhancedEntry(lines, options = {}) {
 
   const topicMolecule = new TopicMolecule(molecule);
   topicMolecule.ensureMapNo();
-  const hoses = topicMolecule.hoseCodes.map((hoses) =>
-    hoses.map((value, sphere) => ({ value, sphere })),
+  const hoses = topicMolecule.hoseCodes.map((hose) =>
+    hose.map((value, sphere) => ({ value, sphere })),
   );
   entry.atoms = [];
   for (let i = 0; i < map.length; i++) {
     const sourceAtom = map[i];
+    // console.log(hoses[i]);
     entry.atoms.push({ ...atoms[sourceAtom], hoses: hoses[i] });
 
     // console.log(atoms[sourceAtom]);

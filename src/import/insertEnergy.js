@@ -1,5 +1,5 @@
-import { getAlgorithmID } from './getAlgorithmID';
-import { insertAlgorithm } from './insertAlgorithm';
+import { getAlgorithmID } from './getAlgorithmID.js';
+import { insertAlgorithm } from './insertAlgorithm.js';
 
 export function insertEnergy(energy, atomID, db) {
   const insertStmt = db.prepare(`INSERT INTO 

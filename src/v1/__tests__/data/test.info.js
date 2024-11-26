@@ -1,5 +1,6 @@
 export const testDataProperties = [
   {
+    date: '2024-09-25',
     contact: {
       email: 'test1@test.ch',
     },
@@ -36,6 +37,7 @@ export const testDataProperties = [
     },
   },
   {
+    date: '2023-08-20',
     contact: {
       email: 'test2@test.ch',
     },

@@ -5,12 +5,7 @@ import { test, expect } from 'vitest';
 import { getTempDB } from '../../db/getDB.js';
 import { getAlgorithmID } from '../../import/getAlgorithmID.js';
 import { importXYZ } from '../../import/importXYZ.js';
-import {
-  getAlgorithmsWithContact,
-  getAtomCountPerAlgorithm,
-  getEntryCountPerAlgorithm,
-  getHoseCountPerAlgorithm,
-} from '../info';
+import { getAlgorithmsInfo, getGlobalsInfo } from '../info';
 
 import { testDataProperties } from './data/test.info.js';
 
@@ -24,15 +19,10 @@ test('importXYZ', async () => {
   for (let i = 0; i < contents.length; i++) {
     await importXYZ(contents[i], db, testDataProperties[i]);
   }
-  const algorithmsInfo = getAlgorithmsWithContact(db);
-  //   console.log(algorithmsInfo);
 
-  const atomCount = getAtomCountPerAlgorithm(db);
-  console.log(atomCount);
+  const algorithmsInfo = getAlgorithmsInfo(db);
+  const globalsInfo = getGlobalsInfo(db);
 
-  const hoseCount = getHoseCountPerAlgorithm(db);
-  console.log(hoseCount);
-
-  const entryCount = getEntryCountPerAlgorithm(db);
-  console.log(entryCount);
+  expect(algorithmsInfo).toMatchSnapshot('algorithmInfo');
+  expect(globalsInfo).toMatchSnapshot('globalsInfo');
 });

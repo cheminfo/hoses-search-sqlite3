@@ -27,6 +27,7 @@
     "install": "^0.13.0",
     "mass-tools": "^2.2.6",
     "md5": "^2.3.0",
+    "moment": "^2.30.1",
     "openchemlib": "^8.16.0",
     "openchemlib-utils": "^6.4.1",
     "postgrator": "^7.3.0",

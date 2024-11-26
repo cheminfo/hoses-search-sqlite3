@@ -58,6 +58,7 @@ export async function getXYZEnhancedEntry(lines, options = {}) {
   entry.idCode = idCode;
   entry.coordinates = coordinates;
   entry.ssIndex = getSSIndex(molecule);
+  if (options?.date) entry.date = options.date;
   // entry.hoses = calculateHoseCodes(molecule, entry, options);
   // Object.keys(entry).forEach((prop) => console.log(prop));
   // console.log(entry);

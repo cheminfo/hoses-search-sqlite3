@@ -1,4 +1,4 @@
-import { cronSyncDB } from './cron.mjs';
+import { cronSyncDB } from '../cronSyncDB.js';
 import info from './info.js';
 import predict from './predict.js';
 

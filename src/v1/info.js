@@ -1,6 +1,6 @@
 import debugLibrary from 'debug';
 
-import { getTempDB } from '../db/getDB.js';
+import { getDB } from '../db/getDB.js';
 
 const debug = debugLibrary('getInfoFromSmiles');
 
@@ -19,7 +19,7 @@ export default function info(fastify) {
 export async function getInfo(request, response) {
   const body = request.query;
   try {
-    const db = await getTempDB();
+    const db = await getDB();
     const result = {
       algorithms: getAlgorithmsInfo(db),
       globals: getGlobalsInfo(db),

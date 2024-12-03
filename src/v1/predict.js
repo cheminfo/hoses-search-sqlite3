@@ -7,7 +7,7 @@ export default function predict(fastify) {
   fastify.route({
     url: '/v1/predict',
     method: ['GET', 'POST'],
-    handler: predict,
+    handler: getPrediction,
     scheme: {
       summary: '$retrieve information from a molfile',
       description: '',

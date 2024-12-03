@@ -7,15 +7,13 @@ import fastifySwaggerUi from '@fastify/swagger-ui';
 import debugLibrary from 'debug';
 import Fastify from 'fastify';
 
-import { getDB, getTempDB } from './db/getDB.js';
-import { importXYZ } from './import/importXYZ.js';
-import { insertEntry } from './import/insertEntry.js';
+import { getDB } from './db/getDB.js';
 import v1 from './v1/v1.js';
 
 const debug = debugLibrary('server');
 
 async function setDB() {
-  const db = await getTempDB();
+  const db = await getDB();
   return db;
 }
 
@@ -69,5 +67,5 @@ async function doAll() {
   });
 }
 
-const db = setDB();
-doAll();
+const db = await setDB();
+await doAll();

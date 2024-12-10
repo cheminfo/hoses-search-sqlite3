@@ -65,9 +65,9 @@ test('importXYZ', async () => {
   const insertedAlgorithms = stmtAlgorithms.all();
   expect(insertedAlgorithms).toMatchFileSnapshot('algorithmsTable');
 
-  const stmtHoses = db.prepare('SELECT * FROM hoseCodes');
+  const stmtHoses = db.prepare('SELECT * FROM hoses');
   const insertedHoses = stmtHoses.all();
-  expect(insertedHoses).toMatchSnapshot('hoseCodesTable');
+  expect(insertedHoses).toMatchSnapshot('hosesTable');
 
   const stmtContacts = db.prepare('SELECT * FROM contacts');
   const insertedContacts = stmtContacts.all();

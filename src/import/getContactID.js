@@ -1,4 +1,4 @@
-import { insertContact } from './insertContact';
+import { insertContact } from './insertContact.js';
 
 export function getContactID(mail, db) {
   const fetchStmt = db.prepare(`SELECT * FROM contacts WHERE mail='${mail}'`);

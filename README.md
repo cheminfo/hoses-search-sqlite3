@@ -5,11 +5,6 @@ Substructure search requires 2 steps:
 1. Search for candidates (using bitwise operation)
 2. Check if a query is really in the target molecule
 
-## Installation
+## Example of data can be inspired by:
 
-On silicon mac you may need:
-
-```
-cd node_modules/better-sqlite3
-npm run build-release
-```
+https://www.cheminfo.org/flavor/xps/XPS_QM9_preview/index.html

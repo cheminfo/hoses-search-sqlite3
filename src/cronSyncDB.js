@@ -7,11 +7,12 @@ import {
   renameSync,
 } from 'node:fs';
 import { join } from 'node:path';
-import delay from 'delay';
-import { getDB } from './db/getDB.js';
-import { importXYZ } from './import/importXYZ.js';
 
 import debugLibrary from 'debug';
+import delay from 'delay';
+
+import { getDB } from './db/getDB.js';
+import { importXYZ } from './import/importXYZ.js';
 
 const debug = debugLibrary('cronSyncDB');
 
@@ -34,14 +35,14 @@ export async function cronSyncDB() {
 
         const configFile = join(baseDirectory, 'config.js');
         if (!existsSync(configFile)) {
-          debug('config.js not found in: ' + baseDirectory);
+          debug(`config.js not found in: ${baseDirectory}`);
           continue;
         }
         const { config } = await import(configFile);
         const filesToProcess = readdirSync(dirToProcess);
         for (const fileToProcess of filesToProcess) {
           const filePath = join(dirToProcess, fileToProcess);
-          console.log(filePath);
+          // console.log(filePath);
           try {
             const extension = fileToProcess.replace(/^.*\./, '');
             switch (extension) {
@@ -49,10 +50,13 @@ export async function cronSyncDB() {
                 const xyzData = readFileSync(filePath, 'utf-8');
                 await importXYZ(xyzData, db, config);
                 renameSync(filePath, join(dirProcessed, fileToProcess));
+                break;
               default:
-                debug('Unknown file extension: ' + extension);
+                debug(`Unknown file extension: ${extension}`);
+                renameSync(filePath, join(dirErrored, fileToProcess));
             }
-          } catch {
+          } catch (error) {
+            console.log('>>> Error:', error);
             renameSync(filePath, join(dirErrored, fileToProcess));
           }
         }
@@ -60,7 +64,7 @@ export async function cronSyncDB() {
     } catch (error) {
       console.error(error);
     } finally {
-      db?.close();
+      // db?.close();
     }
     await delay(1000);
   }

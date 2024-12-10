@@ -9,7 +9,11 @@
     "eslint-fix": "npm run eslint -- --fix",
     "prettier": "prettier --check src",
     "prettier-write": "prettier --write src",
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "sync": "node src/cronSyncDB.js",
+    "syncDev": "DEBUG=* node --watch src/cronSyncDB.js",
+    "test": "npm run test-only && npm run eslint && npm run prettier",
+    "test-only": "vitest"
   },
   "author": "",
   "license": "ISC",
@@ -25,16 +29,12 @@
     "delay": "^6.0.0",
     "ensure-string": "^1.2.0",
     "fastify": "^5.0.0",
-    "install": "^0.13.0",
     "mass-tools": "^2.2.6",
     "md5": "^2.3.0",
-    "moment": "^2.30.1",
     "openchemlib": "^8.16.0",
     "openchemlib-utils": "^6.4.1",
-    "pg": "^8.13.1",
     "postgrator": "^7.3.0",
-    "sdf-parser": "^6.0.1",
-    "typescript": "^5.6.3"
+    "sdf-parser": "^6.0.1"
   },
   "devDependencies": {
     "@types/node": "^22.8.2",

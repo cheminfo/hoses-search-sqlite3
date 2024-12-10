@@ -6,10 +6,12 @@ import { insertHose } from './insertHose.js';
 import { splitXYZ } from './splitXYZ.js';
 
 export async function importXYZ(content, db, options = {}) {
+  const stats = { nbEntries: 0 };
   const xyzEntries = splitXYZ(content);
   for (const xyzLines of xyzEntries) {
     const entry = await getXYZEnhancedEntry(xyzLines, options);
     const entryID = insertEntry(entry, db);
+    stats.nbEntries++;
     for (let i = 0; i < entry.atoms.length; i++) {
       let atomID = insertAtom(entry.atoms[i], i, entryID, db);
       for (let p = 0; p < entry.atoms[i].properties.length; p++) {
@@ -26,4 +28,5 @@ export async function importXYZ(content, db, options = {}) {
       }
     }
   }
+  return stats;
 }

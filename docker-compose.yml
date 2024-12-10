@@ -1,7 +1,7 @@
 version: '2.2'
 services:
-  ocl-cache:
-    build: ./docker
+  server:
+    build: .
     #image: ghcr.io/cheminfo/ocl-cache-docker:head
     restart: always
     ulimits:
@@ -13,10 +13,10 @@ services:
     volumes:
       - ./sqlite:/node/sqlite
     ports:
-      - 127.0.0.1:40828:
+      - 127.0.0.1:41210:41210
 
-  process-sdf:
-    build: ./docker
+  import:
+    build: .
     #image: ghcr.io/cheminfo/ocl-cache-docker:head
     restart: always
     ulimits:
@@ -27,6 +27,5 @@ services:
         max-size: '50m'
     volumes:
       - ./sqlite:/node/sqlite
-      - ./data/sdf:/node/sdf
-      - ./data/smiles:/node/smiles
-    command: npm run processSDF
+      - ./sync/sdf:/node/sync
+    command: npm run sync

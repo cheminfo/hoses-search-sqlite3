@@ -1,12 +1,13 @@
 FROM node:22
 
-EXPOSE 40828
+EXPOSE 41210
 
 RUN mkdir /node
 
 COPY package.json /node/
+COPY package-lock.json /node/
 WORKDIR /node
-RUN npm i 
+RUN npm -ci 
 
 COPY src /node/src
 

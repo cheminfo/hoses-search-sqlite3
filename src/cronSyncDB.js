@@ -41,15 +41,23 @@ export async function cronSyncDB() {
         const { config } = await import(configFile);
         const filesToProcess = readdirSync(dirToProcess);
         for (const fileToProcess of filesToProcess) {
+          debug(
+            `Processing: ${fileToProcess} from project: ${projectDirectory}`,
+          );
           const filePath = join(dirToProcess, fileToProcess);
           // console.log(filePath);
           try {
             const extension = fileToProcess.replace(/^.*\./, '');
             switch (extension) {
               case 'xyz':
-                const xyzData = readFileSync(filePath, 'utf-8');
-                await importXYZ(xyzData, db, config);
-                renameSync(filePath, join(dirProcessed, fileToProcess));
+                {
+                  const xyzData = readFileSync(filePath, 'utf-8');
+                  const stats = await importXYZ(xyzData, db, config);
+                  debug(
+                    `Imported successfully ${fileToProcess}. Nb entries: ${stats.nbEntries}`,
+                  );
+                  renameSync(filePath, join(dirProcessed, fileToProcess));
+                }
                 break;
               default:
                 debug(`Unknown file extension: ${extension}`);

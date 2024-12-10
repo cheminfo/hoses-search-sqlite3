@@ -53,11 +53,10 @@ writeFileSync(
 // we kee only gw in the js file
 writeFileSync(
   new URL('../../src/data/qm9.js', import.meta.url),
-  `export const qm9=${ 
-    stringify({
-      //  entries: entriesQM9, stats: statsAsArrays, spheres, globalStats, statsKeys: statsKeys.map(key => ({ key }))
-      spheres: { gw: spheres.gw },
-    })}`,
+  `export const qm9=${stringify({
+    //  entries: entriesQM9, stats: statsAsArrays, spheres, globalStats, statsKeys: statsKeys.map(key => ({ key }))
+    spheres: { gw: spheres.gw },
+  })}`,
 );
 
 function stringify(object) {

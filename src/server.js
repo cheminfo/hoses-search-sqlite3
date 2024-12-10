@@ -56,9 +56,9 @@ async function doAll() {
   await fastify.ready();
   fastify.swagger();
 
-  debug('Listening http://127.0.0.1:40828');
+  debug('Listening http://127.0.0.1:41210');
 
-  fastify.listen({ port: 40828, host: '0.0.0.0' }, (err) => {
+  fastify.listen({ port: 41210, host: '0.0.0.0' }, (err) => {
     if (err) {
       fastify.log.error(err);
       console.log(err);

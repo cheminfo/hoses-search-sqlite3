@@ -27,5 +27,6 @@ services:
         max-size: '50m'
     volumes:
       - ./sqlite:/node/sqlite
-      - ./sync/sdf:/node/sync
-    command: npm run sync
+      - ./sync:/node/sync
+      - ./cache:/node/cache
+    command: npm run syncDev

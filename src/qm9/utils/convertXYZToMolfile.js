@@ -2,9 +2,14 @@ import { existsSync } from 'node:fs';
 import { readFile, mkdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
+import debugLibrary from 'debug';
+import delay from 'delay';
 import md5 from 'md5';
 
-const baseDir = new URL('../molfileCache', import.meta.url).pathname;
+const debug = debugLibrary('convertXYZToMolfile');
+
+const baseDir = new URL('../../../cache/xyzToMolfile', import.meta.url)
+  .pathname;
 
 export async function convertXYZToMolfile(xyz) {
   const hash = md5(xyz);
@@ -26,16 +31,34 @@ export async function convertXYZToMolfile(xyz) {
   formData.append('inputFormat', 'xyz');
   formData.append('outputFormat', 'mol');
 
-  const response = await fetch('https://openbabel.cheminfo.org/v1/convert', {
-    body: formData,
-    method: 'POST',
-  });
-  const molfile = JSON.parse(await response.text()).result;
-  const lines = molfile.split('\n');
-  lines[2] = xyzLines[1];
-  const molfileWithComment = lines.join('\n');
-  await writeFile(filename, molfileWithComment, 'utf8');
-  return molfileWithComment;
+  let nbFails = 0;
+  while (nbFails < 3) {
+    try {
+      const response = await fetch(
+        'https://openbabel.cheminfo.org/v1/convert',
+        {
+          body: formData,
+          method: 'POST',
+        },
+      );
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const molfile = JSON.parse(await response.text()).result;
+      const lines = molfile.split('\n');
+      lines[2] = xyzLines[1];
+      const molfileWithComment = lines.join('\n');
+      await writeFile(filename, molfileWithComment, 'utf8');
+      await delay(250);
+      return molfileWithComment;
+    } catch (error) {
+      debug(error);
+      debug(`Retrying... ${nbFails}`);
+      nbFails++;
+      await delay(15000);
+    }
+  }
+  throw new Error('Could not convert the XYZ file');
 }
 
 /*

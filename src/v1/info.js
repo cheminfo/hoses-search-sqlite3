@@ -43,9 +43,9 @@ export function getAlgorithmsInfo(db) {
     INNER JOIN energies ON algorithms.algorithmID = energies.algorithmID
     GROUP BY energies.algorithmID) AS atomSubQuery ON atomSubQuery.id=algorithms.algorithmID
   INNER JOIN(
-    SELECT energies.algorithmID AS id, COUNT(hoseCodes.hoseID) AS hoseCount
+    SELECT energies.algorithmID AS id, COUNT(hoses.hoseID) AS hoseCount
     FROM atoms
-    INNER JOIN hoseCodes ON hoseCodes.atomID = atoms.atomID
+    INNER JOIN hoses ON hoses.atomID = atoms.atomID
     INNER JOIN energies ON energies.atomID = atoms.atomID
     GROUP BY energies.algorithmID) AS hoseSubQuery ON hoseSubQuery.id = algorithms.algorithmID
   INNER JOIN(
@@ -54,14 +54,7 @@ export function getAlgorithmsInfo(db) {
     INNER JOIN entries ON atoms.entryID = entries.entryID
     INNER JOIN energies ON atoms.atomID = energies.atomID
     GROUP BY energies.algorithmID) AS entrySubQuery ON entrySubQuery.id=algorithms.algorithmID`);
-  let algorithmInfo = Object.groupBy(
-    infoStmt.all(),
-    ({ algorithmName }) => algorithmName,
-  );
-  for (let algorithm in algorithmInfo) {
-    for (let version of algorithmInfo[algorithm]) delete version.algorithmName;
-  }
-  return algorithmInfo;
+  return infoStmt.all();
 }
 
 export function getAlgorithmsWithContact(db) {
@@ -83,9 +76,9 @@ GROUP BY energies.algorithmID`);
 
 export function getHoseCountPerAlgorithm(db) {
   const hoseCountStmt = db.prepare(`
-SELECT energies.algorithmID, COUNT(hoseCodes.hoseID) AS hoseCount
+SELECT energies.algorithmID, COUNT(hoses.hoseID) AS hoseCount
 FROM atoms
-INNER JOIN hoseCodes ON hoseCodes.atomID = atoms.atomID
+INNER JOIN hoses ON hoses.atomID = atoms.atomID
 INNER JOIN energies ON energies.atomID = atoms.atomID
 GROUP BY energies.algorithmID`);
   return hoseCountStmt.all();
@@ -118,11 +111,11 @@ export function getGlobalsInfo(db) {
   const entriesInfo = entriesStmt.get();
 
   const hosesStmt = db.prepare(`
-    SELECT COUNT(hoseCodes.hoseID) AS totalHoses,
+    SELECT COUNT(hoses.hoseID) AS totalHoses,
     SUM( CASE WHEN entries.lastModificationDate / 1000 >= CAST( strftime('%s', 'now', '-1 month') AS INTEGER ) THEN 1 ELSE 0 END ) AS lastMonthHoses,
     SUM( CASE WHEN entries.lastModificationDate / 1000 >= CAST( strftime('%s', 'now', '-12 months') AS INTEGER ) THEN 1 ELSE 0 END ) AS lastTwelveMonthsHoses
-    FROM hoseCodes 
-    INNER JOIN atoms ON hoseCodes.atomID = atoms.atomID 
+    FROM hoses 
+    INNER JOIN atoms ON hoses.atomID = atoms.atomID 
     INNER JOIN entries ON atoms.entryID = entries.entryID`);
   const hosesInfo = hosesStmt.get();
 

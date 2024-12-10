@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS energies (
     FOREIGN KEY (algorithmID) REFERENCES algorithms(algorithmID)
 );
 
-CREATE TABLE IF NOT EXISTS hoseCodes (
+CREATE TABLE IF NOT EXISTS hoses (
     hoseID INTEGER PRIMARY KEY AUTOINCREMENT,
     value data_type TEXT NOT NULL,
     sphere data_type INTEGER NOT NULL,

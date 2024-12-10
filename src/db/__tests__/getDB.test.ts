@@ -13,7 +13,7 @@ test('getDB', async () => {
     'sqlite_sequence',
     'algorithms',
     'energies',
-    'hoseCodes',
+    'hoses',
     'atoms',
     'contacts',
   ]);

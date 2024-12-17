@@ -1,7 +1,7 @@
-export function insertContact(mail, db) {
+export function insertContact(email, db) {
   const insertStmt = db.prepare(`INSERT INTO 
-            contacts(mail) 
+            contacts(email) 
             VALUES (?)`);
-  const newContact = insertStmt.run(mail);
+  const newContact = insertStmt.run(email);
   return newContact.lastInsertRowid;
 }

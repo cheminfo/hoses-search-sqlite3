@@ -53,8 +53,8 @@ CREATE TABLE IF NOT EXISTS atoms (
 
 CREATE TABLE IF NOT EXISTS contacts (
     contactID INTEGER PRIMARY KEY AUTOINCREMENT,
-    mail data_type TEXT NOT NULL,
-    UNIQUE(mail)
+    email data_type TEXT NOT NULL,
+    UNIQUE(email)
 )
 
 

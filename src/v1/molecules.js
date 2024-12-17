@@ -43,14 +43,14 @@ async function getMolecules(request, response) {
 
 export function getMoleculesFromDB(contactEmail, algorithm, db) {
   const stmt = db.prepare(`
-    SELECT algorithms.name, algorithms.version, contacts.mail, entries.idCode AS entryIdCode, entries.coordinates, entries.xyz, entries.molfile3D, atoms.label, energies.bindingEnergy, hoses.idCode AS hoseIdCode, hoses.sphere
+    SELECT algorithms.name, algorithms.version, contacts.email, entries.idCode AS entryIdCode, entries.coordinates, entries.xyz, entries.molfile3D, atoms.label, energies.bindingEnergy, hoses.idCode AS hoseIdCode, hoses.sphere
     FROM algorithms 
     INNER JOIN contacts ON algorithms.contactID = contacts.contactID
     INNER JOIN energies ON algorithms.algorithmID = energies.algorithmID
     INNER JOIN atoms ON atoms.atomID = energies.atomID
     INNER JOIN hoses ON hoses.atomID = atoms.atomID
     INNER JOIN entries on entries.entryID = atoms.entryID
-    WHERE algorithms.name = '${algorithm}' AND contacts.mail = '${contactEmail}'`);
+    WHERE algorithms.name = '${algorithm}' AND contacts.email = '${contactEmail}'`);
   const moleculesFromDB = stmt.all();
   const molecules = refactorMoleculeData(moleculesFromDB);
   return molecules;

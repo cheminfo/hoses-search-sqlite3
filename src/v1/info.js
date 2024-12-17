@@ -32,7 +32,7 @@ export async function getInfo(request, response) {
 
 export function getAlgorithmsInfo(db) {
   const infoStmt = db.prepare(`
-  SELECT algorithms.algorithmID, algorithms.name AS algorithmName, algorithms.version, algorithms.description, algorithms.contactID, mail,
+  SELECT algorithms.algorithmID, algorithms.name AS algorithmName, algorithms.version, algorithms.description, algorithms.contactID, email,
         atomCount, hoseCount, entryCount
   FROM algorithms
   INNER JOIN contacts ON algorithms.contactID = contacts.contactID
@@ -58,7 +58,7 @@ export function getAlgorithmsInfo(db) {
 
 export function getAlgorithmsWithContact(db) {
   const infoStmt = db.prepare(`
-  SELECT algorithmID, name, version, description, algorithms.contactID, mail
+  SELECT algorithmID, name, version, description, algorithms.contactID, email
   FROM algorithms
   INNER JOIN contacts ON algorithms.contactID = contacts.contactID`);
   return infoStmt.all();

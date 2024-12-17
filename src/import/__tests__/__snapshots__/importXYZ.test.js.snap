@@ -111,7 +111,7 @@ exports[`importXYZ > contactsTable 1`] = `
 [
   {
     "contactID": 1,
-    "mail": "test@test.ch",
+    "email": "test@test.ch",
   },
 ]
 `;

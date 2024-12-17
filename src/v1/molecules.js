@@ -59,7 +59,7 @@ export function getMoleculesFromDB(contactEmail, algorithm, db) {
 function refactorMoleculeData(data) {
   const molecules = [];
   for (const molecule of data) {
-    const moleculeIndex = entryIndex(molecules, molecule.entryIdCode);
+    const moleculeIndex = getMoleculeIndex(molecules, molecule.entryIdCode);
     if (Number.isNaN(moleculeIndex)) {
       const newMolecule = {
         ocl: {
@@ -78,7 +78,7 @@ function refactorMoleculeData(data) {
       };
       molecules.push(newMolecule);
     } else {
-      const atomIndex = atomIndexFromLabel(
+      const atomIndex = getAtomIndex(
         molecules[moleculeIndex].atoms,
         molecule.label,
       );
@@ -101,14 +101,14 @@ function refactorMoleculeData(data) {
   return molecules;
 }
 
-function entryIndex(elements, entryIdCode) {
+function getMoleculeIndex(elements, entryIdCode) {
   const candidate = elements.find(
     (element) => element?.ocl.idCode === entryIdCode,
   );
   return candidate !== undefined ? elements.indexOf(candidate) : Number.NaN;
 }
 
-function atomIndexFromLabel(atoms, atomLabel) {
+function getAtomIndex(atoms, atomLabel) {
   const candidate = atoms.find((atom) => atom.label === atomLabel);
   return candidate !== undefined ? atoms.indexOf(candidate) : Number.NaN;
 }

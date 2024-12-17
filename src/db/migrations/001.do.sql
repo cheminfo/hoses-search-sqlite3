@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS algorithms (
     version data_type TEXT,
     description data_type TEXT,
     contactID, data_type INTEGER,
-    UNIQUE(name, version),
+    UNIQUE(name, version, contactID),
     FOREIGN KEY (contactID) REFERENCES contacts(contactID)
 );
 

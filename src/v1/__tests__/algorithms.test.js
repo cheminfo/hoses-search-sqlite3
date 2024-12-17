@@ -4,11 +4,11 @@ import { test, expect } from 'vitest';
 
 import { getTempDB } from '../../db/getDB.js';
 import { importXYZ } from '../../import/importXYZ.js';
-import { getMoleculesFromDB } from '../molecules.js';
+import { getAlgorithmsFromDB } from '../algorithms.js';
 
 import { testDataProperties } from './data/test.info.js';
 
-test('getMolecules', async () => {
+test('getAlgorithms', async () => {
   const contents = [
     readFileSync(new URL('data/test_1.xyz', import.meta.url)),
     readFileSync(new URL('data/test_2.xyz', import.meta.url)),
@@ -18,6 +18,6 @@ test('getMolecules', async () => {
   for (let i = 0; i < contents.length; i++) {
     await importXYZ(contents[i], db, testDataProperties[i]);
   }
-  const moleculeInfo = getMoleculesFromDB('4', db);
-  expect(moleculeInfo).toMatchSnapshot('molecules');
+  const algorithms = getAlgorithmsFromDB(db);
+  expect(algorithms).toMatchSnapshot('algorithms');
 });

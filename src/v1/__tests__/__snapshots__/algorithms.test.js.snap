@@ -1,0 +1,78 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`getAlgorithms > algorithms 1`] = `
+[
+  {
+    "algorithmID": 1,
+    "contactID": 1,
+    "data_type": null,
+    "description": "GW_charged test 1",
+    "name": "GW_charged",
+    "version": "1.0.0",
+  },
+  {
+    "algorithmID": 2,
+    "contactID": 1,
+    "data_type": null,
+    "description": "dKS_neutral test 1",
+    "name": "dKS_neutral",
+    "version": "1.0.0",
+  },
+  {
+    "algorithmID": 3,
+    "contactID": 1,
+    "data_type": null,
+    "description": "dKS_charged test 1",
+    "name": "dKS_charged",
+    "version": "1.0.0",
+  },
+  {
+    "algorithmID": 4,
+    "contactID": 2,
+    "data_type": null,
+    "description": "GW_charged test 2",
+    "name": "GW_charged",
+    "version": "1.5.0",
+  },
+  {
+    "algorithmID": 5,
+    "contactID": 2,
+    "data_type": null,
+    "description": "dKS_charged test 2",
+    "name": "dKS_charged",
+    "version": "1.2.0",
+  },
+  {
+    "algorithmID": 6,
+    "contactID": 2,
+    "data_type": null,
+    "description": "dKS_neutral test 2",
+    "name": "dKS_neutral",
+    "version": "1.6.0",
+  },
+  {
+    "algorithmID": 7,
+    "contactID": 3,
+    "data_type": null,
+    "description": "GW_charged test 3",
+    "name": "GW_charged",
+    "version": "2.0.0",
+  },
+  {
+    "algorithmID": 8,
+    "contactID": 3,
+    "data_type": null,
+    "description": "dKS_charged test 3",
+    "name": "dKS_charged",
+    "version": "3.0.0",
+  },
+  {
+    "algorithmID": 9,
+    "contactID": 3,
+    "data_type": null,
+    "description": "dKS_neutral test 3",
+    "name": "dKS_neutral",
+    "version": "4.0.0",
+  },
+]
+`;

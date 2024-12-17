@@ -31,26 +31,27 @@ export default function molecules(fastify) {
 }
 
 async function getMolecules(request, response) {
-  const { email, algorithm } = request.query;
+  const { algorithmID } = request.query;
   try {
     const db = await getDB();
-    const moleculesData = getMoleculesFromDB(email, algorithm, db);
+    const moleculesData = getMoleculesFromDB(algorithmID, db);
     return response.send(moleculesData);
   } catch (error) {
     return response.send({ result: {}, log: error.toString() });
   }
 }
 
-export function getMoleculesFromDB(contactEmail, algorithm, db) {
+export function getMoleculesFromDB(algorithmID, db) {
   const stmt = db.prepare(`
-    SELECT algorithms.name, algorithms.version, contacts.email, entries.idCode AS entryIdCode, entries.coordinates, entries.xyz, entries.molfile3D, atoms.label, energies.bindingEnergy, hoses.idCode AS hoseIdCode, hoses.sphere
+    SELECT algorithms.name AS algorithmName, algorithms.version AS algorithmVersion, contacts.email AS contactEmail, entries.idCode AS entryIdCode, entries.coordinates AS entryCoordinates, 
+    entries.xyz, entries.molfile3D, atoms.atomID AS atomID, atoms.label AS atomLabel, energies.bindingEnergy, hoses.idCode AS hoseIdCode, hoses.sphere
     FROM algorithms 
     INNER JOIN contacts ON algorithms.contactID = contacts.contactID
     INNER JOIN energies ON algorithms.algorithmID = energies.algorithmID
     INNER JOIN atoms ON atoms.atomID = energies.atomID
     INNER JOIN hoses ON hoses.atomID = atoms.atomID
     INNER JOIN entries on entries.entryID = atoms.entryID
-    WHERE algorithms.name = '${algorithm}' AND contacts.email = '${contactEmail}'`);
+    WHERE algorithms.algorithmID = '${algorithmID}'`);
   const moleculesFromDB = stmt.all();
   const molecules = refactorMoleculeData(moleculesFromDB);
   return molecules;
@@ -64,7 +65,7 @@ function refactorMoleculeData(data) {
       const newMolecule = {
         ocl: {
           idCode: molecule.entryIdCode,
-          coordinates: molecule.coordinates,
+          coordinates: molecule.entryCoordinates,
         },
         xyz: molecule.xyz,
         molfile3D: molecule.molfile3D,
@@ -80,11 +81,11 @@ function refactorMoleculeData(data) {
     } else {
       const atomIndex = getAtomIndex(
         molecules[moleculeIndex].atoms,
-        molecule.label,
+        molecule.atomID,
       );
       if (Number.isNaN(atomIndex)) {
         const newAtom = {
-          label: molecule.label,
+          label: molecule.atomLabel,
           value: molecule.bindingEnergy,
           hoses: [{ idCode: molecule.hoseIdCode, sphere: molecule.sphere }],
         };
@@ -108,7 +109,7 @@ function getMoleculeIndex(elements, entryIdCode) {
   return candidate !== undefined ? elements.indexOf(candidate) : Number.NaN;
 }
 
-function getAtomIndex(atoms, atomLabel) {
-  const candidate = atoms.find((atom) => atom.label === atomLabel);
+function getAtomIndex(atoms, atomID) {
+  const candidate = atoms.find((atom) => atom.atomID === atomID);
   return candidate !== undefined ? atoms.indexOf(candidate) : Number.NaN;
 }

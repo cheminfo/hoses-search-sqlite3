@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS energies (
 
 CREATE TABLE IF NOT EXISTS hoses (
     hoseID INTEGER PRIMARY KEY AUTOINCREMENT,
-    value data_type TEXT NOT NULL,
+    idCode data_type TEXT NOT NULL,
     sphere data_type INTEGER NOT NULL,
     atomID data_type INTEGER NOT NULL,
     FOREIGN KEY (atomID) REFERENCES atoms(atomID)

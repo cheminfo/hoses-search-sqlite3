@@ -37,7 +37,7 @@ export async function getXYZEnhancedEntry(lines, options = {}) {
   const topicMolecule = new TopicMolecule(molecule);
   topicMolecule.ensureMapNo();
   const hoses = topicMolecule.hoseCodes.map((hose) =>
-    hose.map((value, sphere) => ({ value, sphere })),
+    hose.map((idCode, sphere) => ({ idCode, sphere })),
   );
   entry.atoms = [];
   for (let i = 0; i < map.length; i++) {

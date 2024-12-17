@@ -5,7 +5,7 @@
     "width": 2000,
     "height": 2000,
     "scrollTop": 0,
-    "scrollLeft": -0.2667,
+    "scrollLeft": -0.266,
     "zoomLevel": 1,
     "show": 431,
     "database": 32,
@@ -165,7 +165,7 @@
       },
       "L2z7L-QItD3QZ-8fNvrRX": {
         "id": "L2z7L-QItD3QZ-8fNvrRX",
-        "name": "hoseCodes",
+        "name": "hoses",
         "comment": "",
         "columnIds": [
           "N6fQX9pkvkvip_qCoBs7l",
@@ -183,12 +183,12 @@
           "x": 1010,
           "y": 64,
           "zIndex": 2,
-          "widthName": 65,
+          "widthName": 60,
           "widthComment": 60,
           "color": ""
         },
         "meta": {
-          "updateAt": 1730216039255,
+          "updateAt": 1733841520983,
           "createAt": 1730215938784
         }
       },
@@ -741,7 +741,7 @@
       "pk_WeboxAsLStQYbNYjz8": {
         "id": "pk_WeboxAsLStQYbNYjz8",
         "tableId": "L2z7L-QItD3QZ-8fNvrRX",
-        "name": "value",
+        "name": "idCode",
         "comment": "",
         "dataType": "TEXT",
         "default": "",
@@ -754,7 +754,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730215938784,
+          "updateAt": 1733841757117,
           "createAt": 1730215938784
         }
       },
@@ -1469,6 +1469,22 @@
       -1,
       {
         "relationshipType": 1732610637162
+      }
+    ],
+    "L2z7L-QItD3QZ-8fNvrRX": [
+      "tableEntities",
+      -1,
+      -1,
+      {
+        "name": 1733841520982
+      }
+    ],
+    "pk_WeboxAsLStQYbNYjz8": [
+      "tableColumnEntities",
+      -1,
+      -1,
+      {
+        "name": 1733841757115
       }
     ]
   }

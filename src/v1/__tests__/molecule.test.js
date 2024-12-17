@@ -3,13 +3,12 @@ import { readFileSync } from 'node:fs';
 import { test, expect } from 'vitest';
 
 import { getTempDB } from '../../db/getDB.js';
-import { getAlgorithmID } from '../../import/getAlgorithmID.js';
 import { importXYZ } from '../../import/importXYZ.js';
-import { getAlgorithmsInfo, getGlobalsInfo } from '../info.js';
+import { getMoleculesFromDB } from '../molecules.js';
 
 import { testDataProperties } from './data/test.info.js';
 
-test('getInfo', async () => {
+test('getMolecules', async () => {
   const contents = [
     readFileSync(new URL('data/test_1.xyz', import.meta.url)),
     readFileSync(new URL('data/test_2.xyz', import.meta.url)),
@@ -20,9 +19,6 @@ test('getInfo', async () => {
     await importXYZ(contents[i], db, testDataProperties[i]);
   }
 
-  const algorithmsInfo = getAlgorithmsInfo(db);
-  const globalsInfo = getGlobalsInfo(db);
-
-  expect(algorithmsInfo).toMatchSnapshot('algorithmInfo');
-  expect(globalsInfo).toMatchSnapshot('globalsInfo');
+  const moleculeInfo = getMoleculesFromDB('test2@test.ch', 'GW_charged', db);
+  //   console.log(moleculeInfo);
 });

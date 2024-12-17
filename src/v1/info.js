@@ -17,7 +17,6 @@ export default function info(fastify) {
 }
 
 export async function getInfo(request, response) {
-  const body = request.query;
   try {
     const db = await getDB();
     const result = {

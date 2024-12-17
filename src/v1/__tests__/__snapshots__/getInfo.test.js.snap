@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`importXYZ > algorithmInfo 1`] = `
+exports[`getInfo > algorithmInfo 1`] = `
 [
   {
     "algorithmID": 1,
@@ -104,7 +104,7 @@ exports[`importXYZ > algorithmInfo 1`] = `
 ]
 `;
 
-exports[`importXYZ > globalsInfo 1`] = `
+exports[`getInfo > globalsInfo 1`] = `
 {
   "atoms": {
     "last12Months": 313,

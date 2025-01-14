@@ -42,26 +42,16 @@ export async function getXYZEnhancedEntry(lines, options = {}) {
   entry.atoms = [];
   for (let i = 0; i < map.length; i++) {
     const sourceAtom = map[i];
-    // console.log(hoses[i]);
     entry.atoms.push({ ...atoms[sourceAtom], hoses: hoses[i] });
-
-    // console.log(atoms[sourceAtom]);
   }
-
   entry.mf = molecule.getMolecularFormula().formula;
   entry.mw = molecule.getMolecularFormula().relativeWeight;
-
-  //  topicMolecule.molecule.inventCoordinates();
-
   entry.molfile2D = topicMolecule.toMolfileWithH();
   const { idCode, coordinates } = molecule.getIDCodeAndCoordinates();
   entry.idCode = idCode;
   entry.coordinates = coordinates;
   entry.ssIndex = getSSIndex(molecule);
   if (options?.date) entry.date = options.date;
-  // entry.hoses = calculateHoseCodes(molecule, entry, options);
-  // Object.keys(entry).forEach((prop) => console.log(prop));
-  // console.log(entry);
   return entry;
 }
 

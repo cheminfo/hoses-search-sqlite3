@@ -1,7 +1,8 @@
 CREATE TABLE IF NOT EXISTS entries (
     entryID INTEGER PRIMARY KEY AUTOINCREMENT,
-    nbAtoms data_type INTEGER NOT NULL,
     idCode data_type TEXT NOT NULL,
+    algorithmID data_type INTEGER NOT NULL,
+    nbAtoms data_type INTEGER NOT NULL,
     coordinates data_type TEXT NOT NULL,
     mf data_type TEXT NOT NULL,
     mw data_type REAL NOT NULL,
@@ -10,7 +11,9 @@ CREATE TABLE IF NOT EXISTS entries (
     molfile2D data_type TEXT,
     molfile3D data_type TEXT,
     xyz data_type TEXT,
-    lastModificationDate data_type INTEGER
+    lastModificationDate data_type INTEGER,
+    FOREIGN KEY (algorithmID) REFERENCES algorithms(algorithmID),
+    UNIQUE(idCode, algorithmID)
 );
 
 CREATE TABLE IF NOT EXISTS algorithms (
@@ -31,8 +34,7 @@ CREATE TABLE IF NOT EXISTS energies (
     sourceEnergy  data_type REAL,
     algorithmID data_type INTEGER NOT NULL,
     atomID data_type INTEGER NOT NULL,
-    FOREIGN KEY (atomID) REFERENCES atoms(atomID),
-    FOREIGN KEY (algorithmID) REFERENCES algorithms(algorithmID)
+    FOREIGN KEY (atomID) REFERENCES atoms(atomID)
 );
 
 CREATE TABLE IF NOT EXISTS hoses (

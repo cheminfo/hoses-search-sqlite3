@@ -3,9 +3,222 @@
 exports[`insertEntry 1`] = `
 [
   {
+    "algorithmID": 1,
     "comment": "Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"",
     "coordinates": "#qeSE??}LAcq~\\Je\\AOcIR@EhAT\`D",
     "entryID": 1,
+    "idCode": "fI@@",
+    "mf": "H2O",
+    "molfile2D": "Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+Actelion Java MolfileCreator 1.0
+
+  3  2  0  0  0  0  0  0  0  0999 V2000
+    6.9671    8.4598    6.9778 O   0  0  0  0  0  0  0  0  0  1  0  0
+    7.1148    6.9671    6.9685 H   0  0  0  0  0  0  0  0  0  2  0  0
+    8.3776    8.9702    6.9671 H   0  0  0  0  0  0  0  0  0  3  0  0
+  2  1  1  0  0  0  0
+  3  1  1  0  0  0  0
+M  END
+",
+    "molfile3D": "Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+ OpenBabel10292409443D
+Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+  3  2  0  0  0  0  0  0  0  0999 V2000
+    4.5954    4.5000    4.5009 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5000    5.4641    4.5069 O   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4110    5.7938    4.5000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0  0  0  0
+  3  2  1  0  0  0  0
+M  END
+",
+    "mw": 18.01488,
+    "nbAtoms": 3,
+    "ssIndex": {
+      "data": [
+        0,
+        0,
+        0,
+        16,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+      ],
+      "type": "Buffer",
+    },
+    "xyz": "3
+Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+H 4.59540796 4.50000000 4.50085045
+O 4.50000000 5.46412774 4.50692028
+H 5.41100791 5.79382445 4.50000000",
+  },
+  {
+    "algorithmID": 2,
+    "comment": "Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"",
+    "coordinates": "#qeSE??}LAcq~\\Je\\AOcIR@EhAT\`D",
+    "entryID": 2,
+    "idCode": "fI@@",
+    "mf": "H2O",
+    "molfile2D": "Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+Actelion Java MolfileCreator 1.0
+
+  3  2  0  0  0  0  0  0  0  0999 V2000
+    6.9671    8.4598    6.9778 O   0  0  0  0  0  0  0  0  0  1  0  0
+    7.1148    6.9671    6.9685 H   0  0  0  0  0  0  0  0  0  2  0  0
+    8.3776    8.9702    6.9671 H   0  0  0  0  0  0  0  0  0  3  0  0
+  2  1  1  0  0  0  0
+  3  1  1  0  0  0  0
+M  END
+",
+    "molfile3D": "Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+ OpenBabel10292409443D
+Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+  3  2  0  0  0  0  0  0  0  0999 V2000
+    4.5954    4.5000    4.5009 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5000    5.4641    4.5069 O   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4110    5.7938    4.5000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0  0  0  0
+  3  2  1  0  0  0  0
+M  END
+",
+    "mw": 18.01488,
+    "nbAtoms": 3,
+    "ssIndex": {
+      "data": [
+        0,
+        0,
+        0,
+        16,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+      ],
+      "type": "Buffer",
+    },
+    "xyz": "3
+Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+H 4.59540796 4.50000000 4.50085045
+O 4.50000000 5.46412774 4.50692028
+H 5.41100791 5.79382445 4.50000000",
+  },
+  {
+    "algorithmID": 3,
+    "comment": "Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"",
+    "coordinates": "#qeSE??}LAcq~\\Je\\AOcIR@EhAT\`D",
+    "entryID": 3,
     "idCode": "fI@@",
     "mf": "H2O",
     "molfile2D": "Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"

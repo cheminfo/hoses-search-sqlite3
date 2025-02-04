@@ -1,8 +1,11 @@
 import debugLibrary from 'debug';
 
+import { getAlgorithmID } from './getAlgorithmID.js';
+import { getContactID } from './getContactID.js';
 import { getXYZEnhancedEntry } from './getXYZEnhancedEntry.js';
 import { insertAlgorithm } from './insertAlgorithm.js';
 import { insertAtom } from './insertAtom.js';
+import { insertContact } from './insertContact.js';
 import { insertEnergy } from './insertEnergy.js';
 import { insertEntry } from './insertEntry.js';
 import { insertHose } from './insertHose.js';
@@ -18,62 +21,51 @@ const debug = debugLibrary('importXYZ');
  */
 
 export async function importXYZ(content, db, options = {}) {
-  const stats = { nbEntries: 0 };
+  const stats = { nbEntries: 0, nbContact: 0, nbAtoms: 0, nbHoses: 0 };
   const xyzEntries = splitXYZ(content);
-  let counter = 0;
 
-  // create abject that maps columns to algoID
-  const algorithms = [
-    {
-      column: 4,
-      algorithmID: 123,
-    },
-  ];
+  const xyzProperties = options.xyz.columns;
+  // console.log(xyzProperties);
+  for (let p = 0; p < xyzProperties.length; p++) {
+    let contactID = getContactID(options.contact.email, db);
+    if (contactID === null) {
+      contactID = insertContact(options.contact.email, db);
+      stats.nbContact++;
+    }
+    const algorithmID = insertAlgorithm(
+      xyzProperties[p].algorithm,
+      contactID,
+      db,
+    );
 
-  for (const xyzLines of xyzEntries) {
-    const entry = await getXYZEnhancedEntry(xyzLines, options);
-    console.log(entry);
-
-    for (const algorithm of algorithms) {
-      const { column, algorithmID } = algorithm;
-
+    for (const xyzLines of xyzEntries) {
+      const entry = await getXYZEnhancedEntry(xyzLines, options);
       const entryID = insertEntry(entry, algorithmID, db);
-
+      stats.nbEntries++;
       for (let i = 0; i < entry.atoms.length; i++) {
-        for (let p = 0; p < entry.atoms[i].properties.length; p++) {
-          const property = entry.atoms[i].properties[p];
+        const atomID = insertAtom(entry.atoms[i], i, entryID, db);
+        stats.nbAtoms++;
+        for (let h = 0; h < entry.atoms[i].hoses.length; h++) {
+          const hose = entry.atoms[i].hoses[h];
+          insertHose(hose, atomID, db);
+          stats.nbHoses++;
+        }
+        for (let j = 0; j < entry.atoms[i].properties.length; j++) {
+          const property = entry.atoms[i].properties[j];
           if (!Number.isNaN(property.energy)) {
-            const algorithmID = insertAlgorithm(
-              property.algorithm,
+            const energyAlgorithmID = getAlgorithmID(
+              property.algorithm.name,
+              property.algorithm.version,
               property.contact,
               db,
             );
-            // Will import the contact if needed at the same time
+            if (energyAlgorithmID === algorithmID) {
+              insertEnergy(property, algorithmID, atomID, db);
+            }
           }
         }
       }
     }
-
-    // const entryID = insertEntry(entry, db);
-    // stats.nbEntries++;
-    // counter++;
-    // if (counter % 100 === 0) {
-    //   debug(`Imported ${counter} entries`);
-    // }
-    // for (let i = 0; i < entry.atoms.length; i++) {
-    //   let atomID = insertAtom(entry.atoms[i], i, entryID, db);
-    //   for (let p = 0; p < entry.atoms[i].properties.length; p++) {
-    //     let property = entry.atoms[i].properties[p];
-    //     if (!Number.isNaN(property.energy)) {
-    //       insertEnergy(property, atomID, db);
-    //     }
-    //   }
-    // if (entry.atoms[i]?.hoses) {
-    //   for (let h = 0; h < entry.atoms[i].hoses.length; h++) {
-    //     insertHose(entry.atoms[i].hoses[h], atomID, db);
-    //   }
-    // }
   }
+  return stats;
 }
-//   return stats;
-// }

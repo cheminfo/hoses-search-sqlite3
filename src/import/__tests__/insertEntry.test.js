@@ -3,8 +3,10 @@ import { readFileSync } from 'node:fs';
 import { test, expect } from 'vitest';
 
 import { getTempDB } from '../../db/getDB.js';
+import { getContactID } from '../getContactID.js';
 import { getXYZEnhancedEntry } from '../getXYZEnhancedEntry.js';
 import { insertAlgorithm } from '../insertAlgorithm.js';
+import { insertContact } from '../insertContact.js';
 import { insertEntry } from '../insertEntry.js';
 import { splitXYZ } from '../splitXYZ.js';
 
@@ -55,27 +57,27 @@ test('insertEntry', async () => {
   };
 
   const xyzEntries = splitXYZ(xyzRawData);
-  const entry = await getXYZEnhancedEntry(xyzEntries[0], options);
-  console.log(entry.atoms);
+  let xyzProperties = options.xyz.columns;
 
-  for (let i = 0; i < entry.atoms.length; i++) {
-    for (let p = 0; p < entry.atoms[i].properties.length; p++) {
-      const property = entry.atoms[i].properties[p];
-      if (!Number.isNaN(property.energy)) {
-        const algorithmID = insertAlgorithm(
-          property.algorithm,
-          property.contact,
-          db,
-        );
-        // Will import the contact if needed at the same time
-        insertEntry(entry, algorithmID, db);
-      }
+  for (let p = 0; p < xyzProperties.length; p++) {
+    let contactID = getContactID(options.contact.email, db);
+    if (contactID === null) {
+      contactID = insertContact(options.contact.email, db);
+    }
+    const algorithmID = insertAlgorithm(
+      xyzProperties[p].algorithm,
+      contactID,
+      db,
+    );
+
+    for (const xyzLines of xyzEntries) {
+      const entry = await getXYZEnhancedEntry(xyzLines, options);
+      insertEntry(entry, algorithmID, db);
     }
   }
-
   const stmt = db.prepare('SELECT * FROM entries');
   const insertedEntries = stmt.all();
-  console.log(insertedEntries);
+  // console.log(insertedEntries);
   for (let e = 0; e < insertedEntries.length; e++) {
     delete insertedEntries[e].lastModificationDate;
   }

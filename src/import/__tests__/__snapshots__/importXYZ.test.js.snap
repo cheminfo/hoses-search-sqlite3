@@ -1,6 +1,315 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`importXYZ > atomsTable 1`] = `[]`;
+exports[`importXYZ > atomsTable 1`] = `
+[
+  {
+    "atomID": 1,
+    "entryID": 1,
+    "label": "O",
+    "molfileIndex": 0,
+  },
+  {
+    "atomID": 2,
+    "entryID": 1,
+    "label": "H",
+    "molfileIndex": 1,
+  },
+  {
+    "atomID": 3,
+    "entryID": 1,
+    "label": "H",
+    "molfileIndex": 2,
+  },
+  {
+    "atomID": 4,
+    "entryID": 2,
+    "label": "C",
+    "molfileIndex": 0,
+  },
+  {
+    "atomID": 5,
+    "entryID": 2,
+    "label": "H",
+    "molfileIndex": 1,
+  },
+  {
+    "atomID": 6,
+    "entryID": 2,
+    "label": "H",
+    "molfileIndex": 2,
+  },
+  {
+    "atomID": 7,
+    "entryID": 2,
+    "label": "H",
+    "molfileIndex": 3,
+  },
+  {
+    "atomID": 8,
+    "entryID": 2,
+    "label": "H",
+    "molfileIndex": 4,
+  },
+  {
+    "atomID": 9,
+    "entryID": 2,
+    "label": "C",
+    "molfileIndex": 0,
+  },
+  {
+    "atomID": 10,
+    "entryID": 2,
+    "label": "H",
+    "molfileIndex": 1,
+  },
+  {
+    "atomID": 11,
+    "entryID": 2,
+    "label": "H",
+    "molfileIndex": 2,
+  },
+  {
+    "atomID": 12,
+    "entryID": 2,
+    "label": "H",
+    "molfileIndex": 3,
+  },
+  {
+    "atomID": 13,
+    "entryID": 2,
+    "label": "H",
+    "molfileIndex": 4,
+  },
+  {
+    "atomID": 14,
+    "entryID": 3,
+    "label": "C",
+    "molfileIndex": 0,
+  },
+  {
+    "atomID": 15,
+    "entryID": 3,
+    "label": "O",
+    "molfileIndex": 1,
+  },
+  {
+    "atomID": 16,
+    "entryID": 3,
+    "label": "H",
+    "molfileIndex": 2,
+  },
+  {
+    "atomID": 17,
+    "entryID": 3,
+    "label": "H",
+    "molfileIndex": 3,
+  },
+  {
+    "atomID": 18,
+    "entryID": 4,
+    "label": "O",
+    "molfileIndex": 0,
+  },
+  {
+    "atomID": 19,
+    "entryID": 4,
+    "label": "H",
+    "molfileIndex": 1,
+  },
+  {
+    "atomID": 20,
+    "entryID": 4,
+    "label": "H",
+    "molfileIndex": 2,
+  },
+  {
+    "atomID": 21,
+    "entryID": 5,
+    "label": "C",
+    "molfileIndex": 0,
+  },
+  {
+    "atomID": 22,
+    "entryID": 5,
+    "label": "H",
+    "molfileIndex": 1,
+  },
+  {
+    "atomID": 23,
+    "entryID": 5,
+    "label": "H",
+    "molfileIndex": 2,
+  },
+  {
+    "atomID": 24,
+    "entryID": 5,
+    "label": "H",
+    "molfileIndex": 3,
+  },
+  {
+    "atomID": 25,
+    "entryID": 5,
+    "label": "H",
+    "molfileIndex": 4,
+  },
+  {
+    "atomID": 26,
+    "entryID": 5,
+    "label": "C",
+    "molfileIndex": 0,
+  },
+  {
+    "atomID": 27,
+    "entryID": 5,
+    "label": "H",
+    "molfileIndex": 1,
+  },
+  {
+    "atomID": 28,
+    "entryID": 5,
+    "label": "H",
+    "molfileIndex": 2,
+  },
+  {
+    "atomID": 29,
+    "entryID": 5,
+    "label": "H",
+    "molfileIndex": 3,
+  },
+  {
+    "atomID": 30,
+    "entryID": 5,
+    "label": "H",
+    "molfileIndex": 4,
+  },
+  {
+    "atomID": 31,
+    "entryID": 6,
+    "label": "C",
+    "molfileIndex": 0,
+  },
+  {
+    "atomID": 32,
+    "entryID": 6,
+    "label": "O",
+    "molfileIndex": 1,
+  },
+  {
+    "atomID": 33,
+    "entryID": 6,
+    "label": "H",
+    "molfileIndex": 2,
+  },
+  {
+    "atomID": 34,
+    "entryID": 6,
+    "label": "H",
+    "molfileIndex": 3,
+  },
+  {
+    "atomID": 35,
+    "entryID": 7,
+    "label": "O",
+    "molfileIndex": 0,
+  },
+  {
+    "atomID": 36,
+    "entryID": 7,
+    "label": "H",
+    "molfileIndex": 1,
+  },
+  {
+    "atomID": 37,
+    "entryID": 7,
+    "label": "H",
+    "molfileIndex": 2,
+  },
+  {
+    "atomID": 38,
+    "entryID": 8,
+    "label": "C",
+    "molfileIndex": 0,
+  },
+  {
+    "atomID": 39,
+    "entryID": 8,
+    "label": "H",
+    "molfileIndex": 1,
+  },
+  {
+    "atomID": 40,
+    "entryID": 8,
+    "label": "H",
+    "molfileIndex": 2,
+  },
+  {
+    "atomID": 41,
+    "entryID": 8,
+    "label": "H",
+    "molfileIndex": 3,
+  },
+  {
+    "atomID": 42,
+    "entryID": 8,
+    "label": "H",
+    "molfileIndex": 4,
+  },
+  {
+    "atomID": 43,
+    "entryID": 8,
+    "label": "C",
+    "molfileIndex": 0,
+  },
+  {
+    "atomID": 44,
+    "entryID": 8,
+    "label": "H",
+    "molfileIndex": 1,
+  },
+  {
+    "atomID": 45,
+    "entryID": 8,
+    "label": "H",
+    "molfileIndex": 2,
+  },
+  {
+    "atomID": 46,
+    "entryID": 8,
+    "label": "H",
+    "molfileIndex": 3,
+  },
+  {
+    "atomID": 47,
+    "entryID": 8,
+    "label": "H",
+    "molfileIndex": 4,
+  },
+  {
+    "atomID": 48,
+    "entryID": 9,
+    "label": "C",
+    "molfileIndex": 0,
+  },
+  {
+    "atomID": 49,
+    "entryID": 9,
+    "label": "O",
+    "molfileIndex": 1,
+  },
+  {
+    "atomID": 50,
+    "entryID": 9,
+    "label": "H",
+    "molfileIndex": 2,
+  },
+  {
+    "atomID": 51,
+    "entryID": 9,
+    "label": "H",
+    "molfileIndex": 3,
+  },
+]
+`;
 
 exports[`importXYZ > contactsTable 1`] = `
 [
@@ -11,7 +320,127 @@ exports[`importXYZ > contactsTable 1`] = `
 ]
 `;
 
-exports[`importXYZ > energiesTable 1`] = `[]`;
+exports[`importXYZ > energiesTable 1`] = `
+[
+  {
+    "algorithmID": 1,
+    "atomID": 1,
+    "bindingEnergy": 539.0733,
+    "energyID": 1,
+    "kineticEnergy": null,
+    "orbital": "2s",
+    "sourceEnergy": null,
+  },
+  {
+    "algorithmID": 1,
+    "atomID": 4,
+    "bindingEnergy": 290.5991,
+    "energyID": 2,
+    "kineticEnergy": null,
+    "orbital": "2s",
+    "sourceEnergy": null,
+  },
+  {
+    "algorithmID": 1,
+    "atomID": 9,
+    "bindingEnergy": 290.5991,
+    "energyID": 3,
+    "kineticEnergy": null,
+    "orbital": "2s",
+    "sourceEnergy": null,
+  },
+  {
+    "algorithmID": 1,
+    "atomID": 14,
+    "bindingEnergy": 294.5287,
+    "energyID": 4,
+    "kineticEnergy": null,
+    "orbital": "2s",
+    "sourceEnergy": null,
+  },
+  {
+    "algorithmID": 1,
+    "atomID": 15,
+    "bindingEnergy": 538.6921,
+    "energyID": 5,
+    "kineticEnergy": null,
+    "orbital": "2s",
+    "sourceEnergy": null,
+  },
+  {
+    "algorithmID": 2,
+    "atomID": 18,
+    "bindingEnergy": 545.807,
+    "energyID": 6,
+    "kineticEnergy": null,
+    "orbital": "2s",
+    "sourceEnergy": null,
+  },
+  {
+    "algorithmID": 2,
+    "atomID": 31,
+    "bindingEnergy": 294.654,
+    "energyID": 7,
+    "kineticEnergy": null,
+    "orbital": "2s",
+    "sourceEnergy": null,
+  },
+  {
+    "algorithmID": 2,
+    "atomID": 32,
+    "bindingEnergy": 540.71,
+    "energyID": 8,
+    "kineticEnergy": null,
+    "orbital": "2s",
+    "sourceEnergy": null,
+  },
+  {
+    "algorithmID": 3,
+    "atomID": 35,
+    "bindingEnergy": 532.643,
+    "energyID": 9,
+    "kineticEnergy": null,
+    "orbital": "2s",
+    "sourceEnergy": null,
+  },
+  {
+    "algorithmID": 3,
+    "atomID": 38,
+    "bindingEnergy": 285.844,
+    "energyID": 10,
+    "kineticEnergy": null,
+    "orbital": "2s",
+    "sourceEnergy": null,
+  },
+  {
+    "algorithmID": 3,
+    "atomID": 43,
+    "bindingEnergy": 285.844,
+    "energyID": 11,
+    "kineticEnergy": null,
+    "orbital": "2s",
+    "sourceEnergy": null,
+  },
+  {
+    "algorithmID": 3,
+    "atomID": 48,
+    "bindingEnergy": 284.596,
+    "energyID": 12,
+    "kineticEnergy": null,
+    "orbital": "2s",
+    "sourceEnergy": null,
+  },
+  {
+    "algorithmID": 3,
+    "atomID": 49,
+    "bindingEnergy": 529.695,
+    "energyID": 13,
+    "kineticEnergy": null,
+    "orbital": "2s",
+    "sourceEnergy": null,
+  },
+]
+`;
 
 exports[`importXYZ > entriesTable 1`] = `
 [
@@ -122,222 +551,10 @@ O 4.50000000 5.46412774 4.50692028
 H 5.41100791 5.79382445 4.50000000",
   },
   {
-    "algorithmID": 2,
-    "comment": "Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"",
-    "coordinates": "#qeSE??}LAcq~\\Je\\AOcIR@EhAT\`D",
-    "entryID": 2,
-    "idCode": "fI@@",
-    "mf": "H2O",
-    "molfile2D": "Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
-Actelion Java MolfileCreator 1.0
-
-  3  2  0  0  0  0  0  0  0  0999 V2000
-    6.9671    8.4598    6.9778 O   0  0  0  0  0  0  0  0  0  1  0  0
-    7.1148    6.9671    6.9685 H   0  0  0  0  0  0  0  0  0  2  0  0
-    8.3776    8.9702    6.9671 H   0  0  0  0  0  0  0  0  0  3  0  0
-  2  1  1  0  0  0  0
-  3  1  1  0  0  0  0
-M  END
-",
-    "molfile3D": "Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
- OpenBabel10292409443D
-Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
-  3  2  0  0  0  0  0  0  0  0999 V2000
-    4.5954    4.5000    4.5009 H   0  0  0  0  0  0  0  0  0  0  0  0
-    4.5000    5.4641    4.5069 O   0  0  0  0  0  0  0  0  0  0  0  0
-    5.4110    5.7938    4.5000 H   0  0  0  0  0  0  0  0  0  0  0  0
-  1  2  1  0  0  0  0
-  3  2  1  0  0  0  0
-M  END
-",
-    "mw": 18.01488,
-    "nbAtoms": 3,
-    "ssIndex": {
-      "data": [
-        0,
-        0,
-        0,
-        16,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-      ],
-      "type": "Buffer",
-    },
-    "xyz": "3
-Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
-H 4.59540796 4.50000000 4.50085045
-O 4.50000000 5.46412774 4.50692028
-H 5.41100791 5.79382445 4.50000000",
-  },
-  {
-    "algorithmID": 3,
-    "comment": "Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"",
-    "coordinates": "#qeSE??}LAcq~\\Je\\AOcIR@EhAT\`D",
-    "entryID": 3,
-    "idCode": "fI@@",
-    "mf": "H2O",
-    "molfile2D": "Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
-Actelion Java MolfileCreator 1.0
-
-  3  2  0  0  0  0  0  0  0  0999 V2000
-    6.9671    8.4598    6.9778 O   0  0  0  0  0  0  0  0  0  1  0  0
-    7.1148    6.9671    6.9685 H   0  0  0  0  0  0  0  0  0  2  0  0
-    8.3776    8.9702    6.9671 H   0  0  0  0  0  0  0  0  0  3  0  0
-  2  1  1  0  0  0  0
-  3  1  1  0  0  0  0
-M  END
-",
-    "molfile3D": "Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
- OpenBabel10292409443D
-Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
-  3  2  0  0  0  0  0  0  0  0999 V2000
-    4.5954    4.5000    4.5009 H   0  0  0  0  0  0  0  0  0  0  0  0
-    4.5000    5.4641    4.5069 O   0  0  0  0  0  0  0  0  0  0  0  0
-    5.4110    5.7938    4.5000 H   0  0  0  0  0  0  0  0  0  0  0  0
-  1  2  1  0  0  0  0
-  3  2  1  0  0  0  0
-M  END
-",
-    "mw": 18.01488,
-    "nbAtoms": 3,
-    "ssIndex": {
-      "data": [
-        0,
-        0,
-        0,
-        16,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-      ],
-      "type": "Buffer",
-    },
-    "xyz": "3
-Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
-H 4.59540796 4.50000000 4.50085045
-O 4.50000000 5.46412774 4.50692028
-H 5.41100791 5.79382445 4.50000000",
-  },
-  {
     "algorithmID": 1,
     "comment": "Lattice="10.55732741 0.0 0.0 0.0 10.47433493 0.0 0.0 0.0 10.78853619" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"",
     "coordinates": "#qbBH]ZoUhWXE??vtAjA~Mra\\AJDHYjjwg^PjR@DhA|\`D",
-    "entryID": 4,
+    "entryID": 2,
     "idCode": "fH@@",
     "mf": "CH4",
     "molfile2D": "Lattice="10.55732741 0.0 0.0 0.0 10.47433493 0.0 0.0 0.0 10.78853619" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
@@ -450,7 +667,224 @@ H 4.50000000 5.95804208 4.50000000
 H 4.51704914 5.94841095 6.28853619",
   },
   {
-    "algorithmID": 3,
+    "algorithmID": 1,
+    "comment": "Lattice="10.89392123 0.0 0.0 0.0 10.81307256 0.0 0.0 0.0 9.01510639" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"",
+    "coordinates": "#qPgx@@B[~PubaP\`C~x\\^S?CXA]Dhr@OpA?@D",
+    "entryID": 3,
+    "idCode": "eFHBJ@",
+    "mf": "CH2O",
+    "molfile2D": "Lattice="10.89392123 0.0 0.0 0.0 10.81307256 0.0 0.0 0.0 9.01510639" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+Actelion Java MolfileCreator 1.0
+
+  4  3  0  0  0  0  0  0  0  0999 V2000
+    5.4550    5.7074    4.5057 C   0  0  0  0  0  0  0  0  0  1  0  0
+    5.4714    4.5000    4.5000 O   0  0  0  0  0  0  0  0  0  2  0  0
+    6.3939    6.3131    4.5017 H   0  0  0  0  0  0  0  0  0  3  0  0
+    4.5000    6.2873    4.5151 H   0  0  0  0  0  0  0  0  0  4  0  0
+  2  1  2  0  0  0  0
+  1  4  1  0  0  0  0
+  3  1  1  0  0  0  0
+M  END
+",
+    "molfile3D": "Lattice="10.89392123 0.0 0.0 0.0 10.81307256 0.0 0.0 0.0 9.01510639" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+ OpenBabel10082413443D
+Lattice="10.89392123 0.0 0.0 0.0 10.81307256 0.0 0.0 0.0 9.01510639" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+  4  3  0  0  0  0  0  0  0  0999 V2000
+    5.4550    5.7074    4.5057 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4714    4.5000    4.5000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3939    6.3131    4.5017 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5000    6.2873    4.5151 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  4  1  0  0  0  0
+  2  1  2  0  0  0  0
+  3  1  1  0  0  0  0
+M  END
+",
+    "mw": 30.02588,
+    "nbAtoms": 4,
+    "ssIndex": {
+      "data": [
+        16,
+        0,
+        0,
+        17,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+      ],
+      "type": "Buffer",
+    },
+    "xyz": "4
+Lattice="10.89392123 0.0 0.0 0.0 10.81307256 0.0 0.0 0.0 9.01510639" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+C 5.45500662 5.70744485 4.50565078
+O 5.47139525 4.50000000 4.50000000
+H 6.39392123 6.31307256 4.50174003
+H 4.50000000 6.28730276 4.51510639",
+  },
+  {
+    "algorithmID": 2,
+    "comment": "Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"",
+    "coordinates": "#qeSE??}LAcq~\\Je\\AOcIR@EhAT\`D",
+    "entryID": 4,
+    "idCode": "fI@@",
+    "mf": "H2O",
+    "molfile2D": "Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+Actelion Java MolfileCreator 1.0
+
+  3  2  0  0  0  0  0  0  0  0999 V2000
+    6.9671    8.4598    6.9778 O   0  0  0  0  0  0  0  0  0  1  0  0
+    7.1148    6.9671    6.9685 H   0  0  0  0  0  0  0  0  0  2  0  0
+    8.3776    8.9702    6.9671 H   0  0  0  0  0  0  0  0  0  3  0  0
+  2  1  1  0  0  0  0
+  3  1  1  0  0  0  0
+M  END
+",
+    "molfile3D": "Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+ OpenBabel10292409443D
+Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+  3  2  0  0  0  0  0  0  0  0999 V2000
+    4.5954    4.5000    4.5009 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5000    5.4641    4.5069 O   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4110    5.7938    4.5000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0  0  0  0
+  3  2  1  0  0  0  0
+M  END
+",
+    "mw": 18.01488,
+    "nbAtoms": 3,
+    "ssIndex": {
+      "data": [
+        0,
+        0,
+        0,
+        16,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+      ],
+      "type": "Buffer",
+    },
+    "xyz": "3
+Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+H 4.59540796 4.50000000 4.50085045
+O 4.50000000 5.46412774 4.50692028
+H 5.41100791 5.79382445 4.50000000",
+  },
+  {
+    "algorithmID": 2,
     "comment": "Lattice="10.55732741 0.0 0.0 0.0 10.47433493 0.0 0.0 0.0 10.78853619" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"",
     "coordinates": "#qbBH]ZoUhWXE??vtAjA~Mra\\AJDHYjjwg^PjR@DhA|\`D",
     "entryID": 5,
@@ -566,7 +1000,7 @@ H 4.50000000 5.95804208 4.50000000
 H 4.51704914 5.94841095 6.28853619",
   },
   {
-    "algorithmID": 1,
+    "algorithmID": 2,
     "comment": "Lattice="10.89392123 0.0 0.0 0.0 10.81307256 0.0 0.0 0.0 9.01510639" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"",
     "coordinates": "#qPgx@@B[~PubaP\`C~x\\^S?CXA]Dhr@OpA?@D",
     "entryID": 6,
@@ -677,46 +1111,42 @@ H 6.39392123 6.31307256 4.50174003
 H 4.50000000 6.28730276 4.51510639",
   },
   {
-    "algorithmID": 2,
-    "comment": "Lattice="10.89392123 0.0 0.0 0.0 10.81307256 0.0 0.0 0.0 9.01510639" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"",
-    "coordinates": "#qPgx@@B[~PubaP\`C~x\\^S?CXA]Dhr@OpA?@D",
+    "algorithmID": 3,
+    "comment": "Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"",
+    "coordinates": "#qeSE??}LAcq~\\Je\\AOcIR@EhAT\`D",
     "entryID": 7,
-    "idCode": "eFHBJ@",
-    "mf": "CH2O",
-    "molfile2D": "Lattice="10.89392123 0.0 0.0 0.0 10.81307256 0.0 0.0 0.0 9.01510639" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+    "idCode": "fI@@",
+    "mf": "H2O",
+    "molfile2D": "Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
 Actelion Java MolfileCreator 1.0
 
-  4  3  0  0  0  0  0  0  0  0999 V2000
-    5.4550    5.7074    4.5057 C   0  0  0  0  0  0  0  0  0  1  0  0
-    5.4714    4.5000    4.5000 O   0  0  0  0  0  0  0  0  0  2  0  0
-    6.3939    6.3131    4.5017 H   0  0  0  0  0  0  0  0  0  3  0  0
-    4.5000    6.2873    4.5151 H   0  0  0  0  0  0  0  0  0  4  0  0
-  2  1  2  0  0  0  0
-  1  4  1  0  0  0  0
+  3  2  0  0  0  0  0  0  0  0999 V2000
+    6.9671    8.4598    6.9778 O   0  0  0  0  0  0  0  0  0  1  0  0
+    7.1148    6.9671    6.9685 H   0  0  0  0  0  0  0  0  0  2  0  0
+    8.3776    8.9702    6.9671 H   0  0  0  0  0  0  0  0  0  3  0  0
+  2  1  1  0  0  0  0
   3  1  1  0  0  0  0
 M  END
 ",
-    "molfile3D": "Lattice="10.89392123 0.0 0.0 0.0 10.81307256 0.0 0.0 0.0 9.01510639" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
- OpenBabel10082413443D
-Lattice="10.89392123 0.0 0.0 0.0 10.81307256 0.0 0.0 0.0 9.01510639" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
-  4  3  0  0  0  0  0  0  0  0999 V2000
-    5.4550    5.7074    4.5057 C   0  0  0  0  0  0  0  0  0  0  0  0
-    5.4714    4.5000    4.5000 O   0  0  0  0  0  0  0  0  0  0  0  0
-    6.3939    6.3131    4.5017 H   0  0  0  0  0  0  0  0  0  0  0  0
-    4.5000    6.2873    4.5151 H   0  0  0  0  0  0  0  0  0  0  0  0
-  1  4  1  0  0  0  0
-  2  1  2  0  0  0  0
-  3  1  1  0  0  0  0
+    "molfile3D": "Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+ OpenBabel10292409443D
+Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+  3  2  0  0  0  0  0  0  0  0999 V2000
+    4.5954    4.5000    4.5009 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5000    5.4641    4.5069 O   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4110    5.7938    4.5000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0  0  0  0
+  3  2  1  0  0  0  0
 M  END
 ",
-    "mw": 30.02588,
-    "nbAtoms": 4,
+    "mw": 18.01488,
+    "nbAtoms": 3,
     "ssIndex": {
       "data": [
+        0,
+        0,
+        0,
         16,
-        0,
-        0,
-        17,
         0,
         0,
         0,
@@ -780,18 +1210,133 @@ M  END
       ],
       "type": "Buffer",
     },
-    "xyz": "4
-Lattice="10.89392123 0.0 0.0 0.0 10.81307256 0.0 0.0 0.0 9.01510639" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
-C 5.45500662 5.70744485 4.50565078
-O 5.47139525 4.50000000 4.50000000
-H 6.39392123 6.31307256 4.50174003
-H 4.50000000 6.28730276 4.51510639",
+    "xyz": "3
+Lattice="9.91100791 0.0 0.0 0.0 10.29382445 0.0 0.0 0.0 9.00692028" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+H 4.59540796 4.50000000 4.50085045
+O 4.50000000 5.46412774 4.50692028
+H 5.41100791 5.79382445 4.50000000",
+  },
+  {
+    "algorithmID": 3,
+    "comment": "Lattice="10.55732741 0.0 0.0 0.0 10.47433493 0.0 0.0 0.0 10.78853619" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"",
+    "coordinates": "#qbBH]ZoUhWXE??vtAjA~Mra\\AJDHYjjwg^PjR@DhA|\`D",
+    "entryID": 8,
+    "idCode": "fH@@",
+    "mf": "CH4",
+    "molfile2D": "Lattice="10.55732741 0.0 0.0 0.0 10.47433493 0.0 0.0 0.0 10.78853619" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+Actelion Java MolfileCreator 1.0
+
+  5  4  0  0  0  0  0  0  0  0999 V2000
+    5.0298    5.5952    5.3874 C   0  0  0  0  0  0  0  0  0  1  0  0
+    5.0446    4.5000    5.3813 H   0  0  0  0  0  0  0  0  0  2  0  0
+    6.0573    5.9743    5.3796 H   0  0  0  0  0  0  0  0  0  3  0  0
+    4.5000    5.9580    4.5000 H   0  0  0  0  0  0  0  0  0  4  0  0
+    4.5170    5.9484    6.2885 H   0  0  0  0  0  0  0  0  0  5  0  0
+  1  5  1  0  0  0  0
+  2  1  1  0  0  0  0
+  3  1  1  0  0  0  0
+  4  1  1  0  0  0  0
+M  END
+",
+    "molfile3D": "Lattice="10.55732741 0.0 0.0 0.0 10.47433493 0.0 0.0 0.0 10.78853619" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+ OpenBabel10082413443D
+Lattice="10.55732741 0.0 0.0 0.0 10.47433493 0.0 0.0 0.0 10.78853619" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+  5  4  0  0  0  0  0  0  0  0999 V2000
+    5.0298    5.5952    5.3874 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.0446    4.5000    5.3813 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0573    5.9743    5.3796 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5000    5.9580    4.5000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5170    5.9484    6.2885 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  5  1  0  0  0  0
+  2  1  1  0  0  0  0
+  3  1  1  0  0  0  0
+  4  1  1  0  0  0  0
+M  END
+",
+    "mw": 16.04276,
+    "nbAtoms": 5,
+    "ssIndex": {
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+      ],
+      "type": "Buffer",
+    },
+    "xyz": "5
+Lattice="10.55732741 0.0 0.0 0.0 10.47433493 0.0 0.0 0.0 10.78853619" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
+C 5.02975104 5.59520017 5.38737141
+H 5.04461553 4.50000000 5.38133262
+H 6.05732741 5.97433493 5.37961885
+H 4.50000000 5.95804208 4.50000000
+H 4.51704914 5.94841095 6.28853619",
   },
   {
     "algorithmID": 3,
     "comment": "Lattice="10.89392123 0.0 0.0 0.0 10.81307256 0.0 0.0 0.0 9.01510639" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"",
     "coordinates": "#qPgx@@B[~PubaP\`C~x\\^S?CXA]Dhr@OpA?@D",
-    "entryID": 8,
+    "entryID": 9,
     "idCode": "eFHBJ@",
     "mf": "CH2O",
     "molfile2D": "Lattice="10.89392123 0.0 0.0 0.0 10.81307256 0.0 0.0 0.0 9.01510639" Properties=species:S:1:pos:R:3:GW_charged:R:1:dKS_charged:R:1:dKS_neutral:R:1 pbc="T T T"
@@ -901,4 +1446,1537 @@ H 4.50000000 6.28730276 4.51510639",
 ]
 `;
 
-exports[`importXYZ > hosesTable 1`] = `[]`;
+exports[`importXYZ > hosesTable 1`] = `
+[
+  {
+    "atomID": 1,
+    "hoseID": 1,
+    "idCode": "fI@GEPZguozTOeT",
+    "sphere": 0,
+  },
+  {
+    "atomID": 1,
+    "hoseID": 2,
+    "idCode": "fI@GEPZguozTOeT",
+    "sphere": 1,
+  },
+  {
+    "atomID": 1,
+    "hoseID": 3,
+    "idCode": "fI@GEPZguozTOeT",
+    "sphere": 2,
+  },
+  {
+    "atomID": 1,
+    "hoseID": 4,
+    "idCode": "fI@GEPZguozTOeT",
+    "sphere": 3,
+  },
+  {
+    "atomID": 1,
+    "hoseID": 5,
+    "idCode": "fI@GEPZguozTOeT",
+    "sphere": 4,
+  },
+  {
+    "atomID": 2,
+    "hoseID": 6,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 2,
+    "hoseID": 7,
+    "idCode": "eFJHfXp]T~jtdDRj@",
+    "sphere": 1,
+  },
+  {
+    "atomID": 2,
+    "hoseID": 8,
+    "idCode": "eFJHfXp]T~jtdDRj@",
+    "sphere": 2,
+  },
+  {
+    "atomID": 2,
+    "hoseID": 9,
+    "idCode": "eFJHfXp]T~jtdDRj@",
+    "sphere": 3,
+  },
+  {
+    "atomID": 2,
+    "hoseID": 10,
+    "idCode": "eFJHfXp]T~jtdDRj@",
+    "sphere": 4,
+  },
+  {
+    "atomID": 3,
+    "hoseID": 11,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 3,
+    "hoseID": 12,
+    "idCode": "eFJHfXp]T~jtdDRj@",
+    "sphere": 1,
+  },
+  {
+    "atomID": 3,
+    "hoseID": 13,
+    "idCode": "eFJHfXp]T~jtdDRj@",
+    "sphere": 2,
+  },
+  {
+    "atomID": 3,
+    "hoseID": 14,
+    "idCode": "eFJHfXp]T~jtdDRj@",
+    "sphere": 3,
+  },
+  {
+    "atomID": 3,
+    "hoseID": 15,
+    "idCode": "eFJHfXp]T~jtdDRj@",
+    "sphere": 4,
+  },
+  {
+    "atomID": 4,
+    "hoseID": 16,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 0,
+  },
+  {
+    "atomID": 4,
+    "hoseID": 17,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 4,
+    "hoseID": 18,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 4,
+    "hoseID": 19,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 4,
+    "hoseID": 20,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 5,
+    "hoseID": 21,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 5,
+    "hoseID": 22,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 5,
+    "hoseID": 23,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 5,
+    "hoseID": 24,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 5,
+    "hoseID": 25,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 6,
+    "hoseID": 26,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 6,
+    "hoseID": 27,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 6,
+    "hoseID": 28,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 6,
+    "hoseID": 29,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 6,
+    "hoseID": 30,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 7,
+    "hoseID": 31,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 7,
+    "hoseID": 32,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 7,
+    "hoseID": 33,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 7,
+    "hoseID": 34,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 7,
+    "hoseID": 35,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 8,
+    "hoseID": 36,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 8,
+    "hoseID": 37,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 8,
+    "hoseID": 38,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 8,
+    "hoseID": 39,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 8,
+    "hoseID": 40,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 9,
+    "hoseID": 41,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 0,
+  },
+  {
+    "atomID": 9,
+    "hoseID": 42,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 9,
+    "hoseID": 43,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 9,
+    "hoseID": 44,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 9,
+    "hoseID": 45,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 10,
+    "hoseID": 46,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 10,
+    "hoseID": 47,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 10,
+    "hoseID": 48,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 10,
+    "hoseID": 49,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 10,
+    "hoseID": 50,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 11,
+    "hoseID": 51,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 11,
+    "hoseID": 52,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 11,
+    "hoseID": 53,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 11,
+    "hoseID": 54,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 11,
+    "hoseID": 55,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 12,
+    "hoseID": 56,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 12,
+    "hoseID": 57,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 12,
+    "hoseID": 58,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 12,
+    "hoseID": 59,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 12,
+    "hoseID": 60,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 13,
+    "hoseID": 61,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 13,
+    "hoseID": 62,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 13,
+    "hoseID": 63,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 13,
+    "hoseID": 64,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 13,
+    "hoseID": 65,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 14,
+    "hoseID": 66,
+    "idCode": "fH@NJ\`uOk_th\\Jh",
+    "sphere": 0,
+  },
+  {
+    "atomID": 14,
+    "hoseID": 67,
+    "idCode": "eFHBJGETFdY|cviINET",
+    "sphere": 1,
+  },
+  {
+    "atomID": 14,
+    "hoseID": 68,
+    "idCode": "eFHBJGETFdY|cviINET",
+    "sphere": 2,
+  },
+  {
+    "atomID": 14,
+    "hoseID": 69,
+    "idCode": "eFHBJGETFdY|cviINET",
+    "sphere": 3,
+  },
+  {
+    "atomID": 14,
+    "hoseID": 70,
+    "idCode": "eFHBJGETFdY|cviINET",
+    "sphere": 4,
+  },
+  {
+    "atomID": 15,
+    "hoseID": 71,
+    "idCode": "fI@GEPZgtzTOeT",
+    "sphere": 0,
+  },
+  {
+    "atomID": 15,
+    "hoseID": 72,
+    "idCode": "eFHBJGDTFdY|cviHOeT",
+    "sphere": 1,
+  },
+  {
+    "atomID": 15,
+    "hoseID": 73,
+    "idCode": "eFHBJGDTFdY|cviHOeT",
+    "sphere": 2,
+  },
+  {
+    "atomID": 15,
+    "hoseID": 74,
+    "idCode": "eFHBJGDTFdY|cviHOeT",
+    "sphere": 3,
+  },
+  {
+    "atomID": 15,
+    "hoseID": 75,
+    "idCode": "eFHBJGDTFdY|cviHOeT",
+    "sphere": 4,
+  },
+  {
+    "atomID": 16,
+    "hoseID": 76,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 16,
+    "hoseID": 77,
+    "idCode": "eFBBYcAuSzkRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 16,
+    "hoseID": 78,
+    "idCode": "eMJDfTfPzYWsVo~d\`bUP",
+    "sphere": 2,
+  },
+  {
+    "atomID": 16,
+    "hoseID": 79,
+    "idCode": "eMJDfTfPzYWsVo~d\`bUP",
+    "sphere": 3,
+  },
+  {
+    "atomID": 16,
+    "hoseID": 80,
+    "idCode": "eMJDfTfPzYWsVo~d\`bUP",
+    "sphere": 4,
+  },
+  {
+    "atomID": 17,
+    "hoseID": 81,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 17,
+    "hoseID": 82,
+    "idCode": "eFBBYcAuSzkRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 17,
+    "hoseID": 83,
+    "idCode": "eMJDfTfPzYWsVo~d\`bUP",
+    "sphere": 2,
+  },
+  {
+    "atomID": 17,
+    "hoseID": 84,
+    "idCode": "eMJDfTfPzYWsVo~d\`bUP",
+    "sphere": 3,
+  },
+  {
+    "atomID": 17,
+    "hoseID": 85,
+    "idCode": "eMJDfTfPzYWsVo~d\`bUP",
+    "sphere": 4,
+  },
+  {
+    "atomID": 18,
+    "hoseID": 86,
+    "idCode": "fI@GEPZguozTOeT",
+    "sphere": 0,
+  },
+  {
+    "atomID": 18,
+    "hoseID": 87,
+    "idCode": "fI@GEPZguozTOeT",
+    "sphere": 1,
+  },
+  {
+    "atomID": 18,
+    "hoseID": 88,
+    "idCode": "fI@GEPZguozTOeT",
+    "sphere": 2,
+  },
+  {
+    "atomID": 18,
+    "hoseID": 89,
+    "idCode": "fI@GEPZguozTOeT",
+    "sphere": 3,
+  },
+  {
+    "atomID": 18,
+    "hoseID": 90,
+    "idCode": "fI@GEPZguozTOeT",
+    "sphere": 4,
+  },
+  {
+    "atomID": 19,
+    "hoseID": 91,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 19,
+    "hoseID": 92,
+    "idCode": "eFJHfXp]T~jtdDRj@",
+    "sphere": 1,
+  },
+  {
+    "atomID": 19,
+    "hoseID": 93,
+    "idCode": "eFJHfXp]T~jtdDRj@",
+    "sphere": 2,
+  },
+  {
+    "atomID": 19,
+    "hoseID": 94,
+    "idCode": "eFJHfXp]T~jtdDRj@",
+    "sphere": 3,
+  },
+  {
+    "atomID": 19,
+    "hoseID": 95,
+    "idCode": "eFJHfXp]T~jtdDRj@",
+    "sphere": 4,
+  },
+  {
+    "atomID": 20,
+    "hoseID": 96,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 20,
+    "hoseID": 97,
+    "idCode": "eFJHfXp]T~jtdDRj@",
+    "sphere": 1,
+  },
+  {
+    "atomID": 20,
+    "hoseID": 98,
+    "idCode": "eFJHfXp]T~jtdDRj@",
+    "sphere": 2,
+  },
+  {
+    "atomID": 20,
+    "hoseID": 99,
+    "idCode": "eFJHfXp]T~jtdDRj@",
+    "sphere": 3,
+  },
+  {
+    "atomID": 20,
+    "hoseID": 100,
+    "idCode": "eFJHfXp]T~jtdDRj@",
+    "sphere": 4,
+  },
+  {
+    "atomID": 21,
+    "hoseID": 101,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 0,
+  },
+  {
+    "atomID": 21,
+    "hoseID": 102,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 21,
+    "hoseID": 103,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 21,
+    "hoseID": 104,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 21,
+    "hoseID": 105,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 22,
+    "hoseID": 106,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 22,
+    "hoseID": 107,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 22,
+    "hoseID": 108,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 22,
+    "hoseID": 109,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 22,
+    "hoseID": 110,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 23,
+    "hoseID": 111,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 23,
+    "hoseID": 112,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 23,
+    "hoseID": 113,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 23,
+    "hoseID": 114,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 23,
+    "hoseID": 115,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 24,
+    "hoseID": 116,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 24,
+    "hoseID": 117,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 24,
+    "hoseID": 118,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 24,
+    "hoseID": 119,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 24,
+    "hoseID": 120,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 25,
+    "hoseID": 121,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 25,
+    "hoseID": 122,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 25,
+    "hoseID": 123,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 25,
+    "hoseID": 124,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 25,
+    "hoseID": 125,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 26,
+    "hoseID": 126,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 0,
+  },
+  {
+    "atomID": 26,
+    "hoseID": 127,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 26,
+    "hoseID": 128,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 26,
+    "hoseID": 129,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 26,
+    "hoseID": 130,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 27,
+    "hoseID": 131,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 27,
+    "hoseID": 132,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 27,
+    "hoseID": 133,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 27,
+    "hoseID": 134,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 27,
+    "hoseID": 135,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 28,
+    "hoseID": 136,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 28,
+    "hoseID": 137,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 28,
+    "hoseID": 138,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 28,
+    "hoseID": 139,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 28,
+    "hoseID": 140,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 29,
+    "hoseID": 141,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 29,
+    "hoseID": 142,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 29,
+    "hoseID": 143,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 29,
+    "hoseID": 144,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 29,
+    "hoseID": 145,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 30,
+    "hoseID": 146,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 30,
+    "hoseID": 147,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 30,
+    "hoseID": 148,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 30,
+    "hoseID": 149,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 30,
+    "hoseID": 150,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 31,
+    "hoseID": 151,
+    "idCode": "fH@NJ\`uOk_th\\Jh",
+    "sphere": 0,
+  },
+  {
+    "atomID": 31,
+    "hoseID": 152,
+    "idCode": "eFHBJGETFdY|cviINET",
+    "sphere": 1,
+  },
+  {
+    "atomID": 31,
+    "hoseID": 153,
+    "idCode": "eFHBJGETFdY|cviINET",
+    "sphere": 2,
+  },
+  {
+    "atomID": 31,
+    "hoseID": 154,
+    "idCode": "eFHBJGETFdY|cviINET",
+    "sphere": 3,
+  },
+  {
+    "atomID": 31,
+    "hoseID": 155,
+    "idCode": "eFHBJGETFdY|cviINET",
+    "sphere": 4,
+  },
+  {
+    "atomID": 32,
+    "hoseID": 156,
+    "idCode": "fI@GEPZgtzTOeT",
+    "sphere": 0,
+  },
+  {
+    "atomID": 32,
+    "hoseID": 157,
+    "idCode": "eFHBJGDTFdY|cviHOeT",
+    "sphere": 1,
+  },
+  {
+    "atomID": 32,
+    "hoseID": 158,
+    "idCode": "eFHBJGDTFdY|cviHOeT",
+    "sphere": 2,
+  },
+  {
+    "atomID": 32,
+    "hoseID": 159,
+    "idCode": "eFHBJGDTFdY|cviHOeT",
+    "sphere": 3,
+  },
+  {
+    "atomID": 32,
+    "hoseID": 160,
+    "idCode": "eFHBJGDTFdY|cviHOeT",
+    "sphere": 4,
+  },
+  {
+    "atomID": 33,
+    "hoseID": 161,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 33,
+    "hoseID": 162,
+    "idCode": "eFBBYcAuSzkRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 33,
+    "hoseID": 163,
+    "idCode": "eMJDfTfPzYWsVo~d\`bUP",
+    "sphere": 2,
+  },
+  {
+    "atomID": 33,
+    "hoseID": 164,
+    "idCode": "eMJDfTfPzYWsVo~d\`bUP",
+    "sphere": 3,
+  },
+  {
+    "atomID": 33,
+    "hoseID": 165,
+    "idCode": "eMJDfTfPzYWsVo~d\`bUP",
+    "sphere": 4,
+  },
+  {
+    "atomID": 34,
+    "hoseID": 166,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 34,
+    "hoseID": 167,
+    "idCode": "eFBBYcAuSzkRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 34,
+    "hoseID": 168,
+    "idCode": "eMJDfTfPzYWsVo~d\`bUP",
+    "sphere": 2,
+  },
+  {
+    "atomID": 34,
+    "hoseID": 169,
+    "idCode": "eMJDfTfPzYWsVo~d\`bUP",
+    "sphere": 3,
+  },
+  {
+    "atomID": 34,
+    "hoseID": 170,
+    "idCode": "eMJDfTfPzYWsVo~d\`bUP",
+    "sphere": 4,
+  },
+  {
+    "atomID": 35,
+    "hoseID": 171,
+    "idCode": "fI@GEPZguozTOeT",
+    "sphere": 0,
+  },
+  {
+    "atomID": 35,
+    "hoseID": 172,
+    "idCode": "fI@GEPZguozTOeT",
+    "sphere": 1,
+  },
+  {
+    "atomID": 35,
+    "hoseID": 173,
+    "idCode": "fI@GEPZguozTOeT",
+    "sphere": 2,
+  },
+  {
+    "atomID": 35,
+    "hoseID": 174,
+    "idCode": "fI@GEPZguozTOeT",
+    "sphere": 3,
+  },
+  {
+    "atomID": 35,
+    "hoseID": 175,
+    "idCode": "fI@GEPZguozTOeT",
+    "sphere": 4,
+  },
+  {
+    "atomID": 36,
+    "hoseID": 176,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 36,
+    "hoseID": 177,
+    "idCode": "eFJHfXp]T~jtdDRj@",
+    "sphere": 1,
+  },
+  {
+    "atomID": 36,
+    "hoseID": 178,
+    "idCode": "eFJHfXp]T~jtdDRj@",
+    "sphere": 2,
+  },
+  {
+    "atomID": 36,
+    "hoseID": 179,
+    "idCode": "eFJHfXp]T~jtdDRj@",
+    "sphere": 3,
+  },
+  {
+    "atomID": 36,
+    "hoseID": 180,
+    "idCode": "eFJHfXp]T~jtdDRj@",
+    "sphere": 4,
+  },
+  {
+    "atomID": 37,
+    "hoseID": 181,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 37,
+    "hoseID": 182,
+    "idCode": "eFJHfXp]T~jtdDRj@",
+    "sphere": 1,
+  },
+  {
+    "atomID": 37,
+    "hoseID": 183,
+    "idCode": "eFJHfXp]T~jtdDRj@",
+    "sphere": 2,
+  },
+  {
+    "atomID": 37,
+    "hoseID": 184,
+    "idCode": "eFJHfXp]T~jtdDRj@",
+    "sphere": 3,
+  },
+  {
+    "atomID": 37,
+    "hoseID": 185,
+    "idCode": "eFJHfXp]T~jtdDRj@",
+    "sphere": 4,
+  },
+  {
+    "atomID": 38,
+    "hoseID": 186,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 0,
+  },
+  {
+    "atomID": 38,
+    "hoseID": 187,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 38,
+    "hoseID": 188,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 38,
+    "hoseID": 189,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 38,
+    "hoseID": 190,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 39,
+    "hoseID": 191,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 39,
+    "hoseID": 192,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 39,
+    "hoseID": 193,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 39,
+    "hoseID": 194,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 39,
+    "hoseID": 195,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 40,
+    "hoseID": 196,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 40,
+    "hoseID": 197,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 40,
+    "hoseID": 198,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 40,
+    "hoseID": 199,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 40,
+    "hoseID": 200,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 41,
+    "hoseID": 201,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 41,
+    "hoseID": 202,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 41,
+    "hoseID": 203,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 41,
+    "hoseID": 204,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 41,
+    "hoseID": 205,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 42,
+    "hoseID": 206,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 42,
+    "hoseID": 207,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 42,
+    "hoseID": 208,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 42,
+    "hoseID": 209,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 42,
+    "hoseID": 210,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 43,
+    "hoseID": 211,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 0,
+  },
+  {
+    "atomID": 43,
+    "hoseID": 212,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 43,
+    "hoseID": 213,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 43,
+    "hoseID": 214,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 43,
+    "hoseID": 215,
+    "idCode": "fH@NJ\`uOkth\\Jh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 44,
+    "hoseID": 216,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 44,
+    "hoseID": 217,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 44,
+    "hoseID": 218,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 44,
+    "hoseID": 219,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 44,
+    "hoseID": 220,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 45,
+    "hoseID": 221,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 45,
+    "hoseID": 222,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 45,
+    "hoseID": 223,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 45,
+    "hoseID": 224,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 45,
+    "hoseID": 225,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 46,
+    "hoseID": 226,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 46,
+    "hoseID": 227,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 46,
+    "hoseID": 228,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 46,
+    "hoseID": 229,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 46,
+    "hoseID": 230,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 47,
+    "hoseID": 231,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 47,
+    "hoseID": 232,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 47,
+    "hoseID": 233,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 2,
+  },
+  {
+    "atomID": 47,
+    "hoseID": 234,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 3,
+  },
+  {
+    "atomID": 47,
+    "hoseID": 235,
+    "idCode": "eFBBYcAuSznRPQJh",
+    "sphere": 4,
+  },
+  {
+    "atomID": 48,
+    "hoseID": 236,
+    "idCode": "fH@NJ\`uOk_th\\Jh",
+    "sphere": 0,
+  },
+  {
+    "atomID": 48,
+    "hoseID": 237,
+    "idCode": "eFHBJGETFdY|cviINET",
+    "sphere": 1,
+  },
+  {
+    "atomID": 48,
+    "hoseID": 238,
+    "idCode": "eFHBJGETFdY|cviINET",
+    "sphere": 2,
+  },
+  {
+    "atomID": 48,
+    "hoseID": 239,
+    "idCode": "eFHBJGETFdY|cviINET",
+    "sphere": 3,
+  },
+  {
+    "atomID": 48,
+    "hoseID": 240,
+    "idCode": "eFHBJGETFdY|cviINET",
+    "sphere": 4,
+  },
+  {
+    "atomID": 49,
+    "hoseID": 241,
+    "idCode": "fI@GEPZgtzTOeT",
+    "sphere": 0,
+  },
+  {
+    "atomID": 49,
+    "hoseID": 242,
+    "idCode": "eFHBJGDTFdY|cviHOeT",
+    "sphere": 1,
+  },
+  {
+    "atomID": 49,
+    "hoseID": 243,
+    "idCode": "eFHBJGDTFdY|cviHOeT",
+    "sphere": 2,
+  },
+  {
+    "atomID": 49,
+    "hoseID": 244,
+    "idCode": "eFHBJGDTFdY|cviHOeT",
+    "sphere": 3,
+  },
+  {
+    "atomID": 49,
+    "hoseID": 245,
+    "idCode": "eFHBJGDTFdY|cviHOeT",
+    "sphere": 4,
+  },
+  {
+    "atomID": 50,
+    "hoseID": 246,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 50,
+    "hoseID": 247,
+    "idCode": "eFBBYcAuSzkRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 50,
+    "hoseID": 248,
+    "idCode": "eMJDfTfPzYWsVo~d\`bUP",
+    "sphere": 2,
+  },
+  {
+    "atomID": 50,
+    "hoseID": 249,
+    "idCode": "eMJDfTfPzYWsVo~d\`bUP",
+    "sphere": 3,
+  },
+  {
+    "atomID": 50,
+    "hoseID": 250,
+    "idCode": "eMJDfTfPzYWsVo~d\`bUP",
+    "sphere": 4,
+  },
+  {
+    "atomID": 51,
+    "hoseID": 251,
+    "idCode": "fHdrARaDj\`",
+    "sphere": 0,
+  },
+  {
+    "atomID": 51,
+    "hoseID": 252,
+    "idCode": "eFBBYcAuSzkRPQJh",
+    "sphere": 1,
+  },
+  {
+    "atomID": 51,
+    "hoseID": 253,
+    "idCode": "eMJDfTfPzYWsVo~d\`bUP",
+    "sphere": 2,
+  },
+  {
+    "atomID": 51,
+    "hoseID": 254,
+    "idCode": "eMJDfTfPzYWsVo~d\`bUP",
+    "sphere": 3,
+  },
+  {
+    "atomID": 51,
+    "hoseID": 255,
+    "idCode": "eMJDfTfPzYWsVo~d\`bUP",
+    "sphere": 4,
+  },
+]
+`;

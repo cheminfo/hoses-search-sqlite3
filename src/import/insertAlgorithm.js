@@ -1,10 +1,4 @@
-import { getContactID } from './getContactID.js';
-import { insertContact } from './insertContact.js';
-
-export function insertAlgorithm(algorithm, contactMail, db) {
-  let contactID = getContactID(contactMail, db);
-  if (contactID === null) contactID = insertContact(contactMail, db);
-
+export function insertAlgorithm(algorithm, contactID, db) {
   const checkIfExistsStmt = db.prepare(
     `SELECT * FROM algorithms WHERE 
     algorithms.name = '${algorithm.name}' AND 

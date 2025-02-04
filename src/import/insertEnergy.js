@@ -1,7 +1,7 @@
 import { getAlgorithmID } from './getAlgorithmID.js';
 import { insertAlgorithm } from './insertAlgorithm.js';
 
-export function insertEnergy(energy, atomID, db) {
+export function insertEnergy(energy, algorithmID, atomID, db) {
   const insertStmt = db.prepare(`INSERT INTO 
           energies(orbital, bindingEnergy, algorithmID, atomID) 
           VALUES (?, ?, ?, ?)`);

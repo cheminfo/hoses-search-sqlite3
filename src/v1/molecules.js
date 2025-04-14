@@ -1,8 +1,4 @@
-import debugLibrary from 'debug';
-
 import { getDB } from '../db/getDB.js';
-
-const debug = debugLibrary('getInfoFromSmiles');
 
 export default function molecules(fastify) {
   fastify.route({
